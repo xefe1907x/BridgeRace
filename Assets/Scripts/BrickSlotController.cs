@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class BrickSlotController : MonoBehaviour
@@ -10,18 +7,51 @@ public class BrickSlotController : MonoBehaviour
     public GameObject redBrick;
     public GameObject yellowBrick;
 
-    bool isBrickInstantiated;
+    bool isEmpty = true;
+
+    int brickNumber; // 1 = Green,  2 = Blue,  3 = Red,  4 = Yellow
+
+    void Start()
+    {
+        RandomNumberCreator();
+    }
 
     void Update()
     {
-        
+        BrickInstantiator();
+    }
+
+    void RandomNumberCreator()
+    {
+        brickNumber = UnityEngine.Random.Range(1, 5);
     }
 
     void BrickInstantiator()
     {
-        if (!isBrickInstantiated)
+        if (isEmpty)
         {
-            // switch case kullan 1-4 arası bi tuğla instantiate et
+            switch (brickNumber)
+            {
+                case 1:
+                    Instantiate(greenBrick, transform);
+                    isEmpty = false;
+                    break;
+                
+                case 2:
+                    Instantiate(blueBrick, transform);
+                    isEmpty = false;
+                    break;
+                
+                case 3:
+                    Instantiate(redBrick, transform);
+                    isEmpty = false;
+                    break;
+                
+                case 4:
+                    Instantiate(yellowBrick, transform);
+                    isEmpty = false;
+                    break;
+            }
         }
     }
 }
