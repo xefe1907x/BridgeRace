@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class PlayerControl : MonoBehaviour
@@ -28,6 +29,14 @@ public class PlayerControl : MonoBehaviour
         else
         {
             _animator.SetBool("isRunning", false);
+        }
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Blue"))
+        {
+            other.gameObject.SetActive(false);
         }
     }
 }
