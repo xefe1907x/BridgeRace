@@ -1,18 +1,38 @@
-using System.Collections;
-using System.Collections.Generic;
+using System;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class CollectedBricksController : MonoBehaviour
 {
-    // Start is called before the first frame update
+    // TODO: Player bricks diye gameobject oluştur sonra player üzerindeki bricks positionsu ona ata. brick aldıkca getchild active olsun.
+    
+    public GameObject playerBrickHolder;
+
+    int _collectedBricks = 0;
+
     void Start()
+    {
+        PlayerControl.collectBricks += IncreaseCollectedBricks;
+    }
+
+    void Update()
+    {
+        PlayerBricksActivator();
+        Debug.Log(_collectedBricks);
+    }
+
+    void IncreaseCollectedBricks()
+    {
+        _collectedBricks += 1;
+    }
+
+    void PlayerBricksActivator()
     {
         
     }
 
-    // Update is called once per frame
-    void Update()
+    void OnDisable()
     {
-        
+        PlayerControl.collectBricks -= IncreaseCollectedBricks;
     }
 }

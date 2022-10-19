@@ -8,7 +8,9 @@ public class PlayerControl : MonoBehaviour
     [SerializeField] Animator _animator;
 
     [SerializeField] float _moveSpeed;
-    
+
+    public static Action collectBricks;
+
     void Update()
     {
         PlayerMovementWithJoystick();
@@ -36,6 +38,7 @@ public class PlayerControl : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Blue"))
         {
+            collectBricks.Invoke();
             other.gameObject.SetActive(false);
         }
     }
