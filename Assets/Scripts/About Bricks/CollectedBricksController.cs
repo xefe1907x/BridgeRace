@@ -3,9 +3,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 
 public class CollectedBricksController : MonoBehaviour
-{
-    // TODO: Player bricks diye gameobject oluştur sonra player üzerindeki bricks positionsu ona ata. brick aldıkca getchild active olsun.
-    
+{    
     public GameObject playerBrickHolder;
 
     int _collectedBricks = 0;
@@ -18,7 +16,6 @@ public class CollectedBricksController : MonoBehaviour
     void Update()
     {
         PlayerBricksActivator();
-        Debug.Log(_collectedBricks);
     }
 
     void IncreaseCollectedBricks()
@@ -28,7 +25,16 @@ public class CollectedBricksController : MonoBehaviour
 
     void PlayerBricksActivator()
     {
-        
+        if (_collectedBricks != 0)
+        {
+            for (int i = 0; i < _collectedBricks; i++)
+            {
+                if (playerBrickHolder.gameObject.transform.GetChild(i).gameObject.activeInHierarchy == false)
+                {
+                    playerBrickHolder.gameObject.transform.GetChild(i).gameObject.SetActive(true);
+                }
+            }
+        }
     }
 
     void OnDisable()
