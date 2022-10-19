@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 20738764}
   - component: {fileID: 20738763}
   - component: {fileID: 20738762}
+  - component: {fileID: 20738765}
   m_Layer: 0
   m_Name: Brick Slot (41)
   m_TagString: Untagged
@@ -227,6 +228,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 20738760}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &20738765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 20738760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7da63ca3a4c49d04eb7f10976ab7a7c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &34677121
 GameObject:
   m_ObjectHideFlags: 0
@@ -239,6 +252,7 @@ GameObject:
   - component: {fileID: 34677125}
   - component: {fileID: 34677124}
   - component: {fileID: 34677123}
+  - component: {fileID: 34677126}
   m_Layer: 0
   m_Name: Brick Slot (49)
   m_TagString: Untagged
@@ -331,6 +345,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 34677121}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &34677126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 34677121}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7da63ca3a4c49d04eb7f10976ab7a7c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &119318984
 GameObject:
   m_ObjectHideFlags: 0
@@ -440,6 +466,7 @@ GameObject:
   - component: {fileID: 119600156}
   - component: {fileID: 119600155}
   - component: {fileID: 119600154}
+  - component: {fileID: 119600157}
   m_Layer: 0
   m_Name: Brick Slot (37)
   m_TagString: Untagged
@@ -532,6 +559,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 119600152}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &119600157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 119600152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7da63ca3a4c49d04eb7f10976ab7a7c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &138131043
 GameObject:
   m_ObjectHideFlags: 0
@@ -544,6 +583,7 @@ GameObject:
   - component: {fileID: 138131047}
   - component: {fileID: 138131046}
   - component: {fileID: 138131045}
+  - component: {fileID: 138131048}
   m_Layer: 0
   m_Name: Brick Slot (67)
   m_TagString: Untagged
@@ -636,6 +676,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 138131043}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &138131048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 138131043}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7da63ca3a4c49d04eb7f10976ab7a7c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &143413043
 GameObject:
   m_ObjectHideFlags: 0
@@ -648,6 +700,7 @@ GameObject:
   - component: {fileID: 143413047}
   - component: {fileID: 143413046}
   - component: {fileID: 143413045}
+  - component: {fileID: 143413048}
   m_Layer: 0
   m_Name: Brick Slot (5)
   m_TagString: Untagged
@@ -740,6 +793,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 143413043}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &143413048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 143413043}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7da63ca3a4c49d04eb7f10976ab7a7c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &173811447
 GameObject:
   m_ObjectHideFlags: 0
@@ -752,6 +817,7 @@ GameObject:
   - component: {fileID: 173811451}
   - component: {fileID: 173811450}
   - component: {fileID: 173811449}
+  - component: {fileID: 173811452}
   m_Layer: 0
   m_Name: Brick Slot (69)
   m_TagString: Untagged
@@ -844,6 +910,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 173811447}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &173811452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 173811447}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7da63ca3a4c49d04eb7f10976ab7a7c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &187388622
 GameObject:
   m_ObjectHideFlags: 0
@@ -856,6 +934,7 @@ GameObject:
   - component: {fileID: 187388626}
   - component: {fileID: 187388625}
   - component: {fileID: 187388624}
+  - component: {fileID: 187388627}
   m_Layer: 0
   m_Name: Brick Slot (62)
   m_TagString: Untagged
@@ -948,6 +1027,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 187388622}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &187388627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 187388622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7da63ca3a4c49d04eb7f10976ab7a7c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &192133233
 GameObject:
   m_ObjectHideFlags: 0
@@ -960,6 +1051,7 @@ GameObject:
   - component: {fileID: 192133237}
   - component: {fileID: 192133236}
   - component: {fileID: 192133235}
+  - component: {fileID: 192133238}
   m_Layer: 0
   m_Name: Brick Slot (78)
   m_TagString: Untagged
@@ -1052,6 +1144,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 192133233}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &192133238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 192133233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7da63ca3a4c49d04eb7f10976ab7a7c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &225367691
 GameObject:
   m_ObjectHideFlags: 0
@@ -1064,6 +1168,7 @@ GameObject:
   - component: {fileID: 225367695}
   - component: {fileID: 225367694}
   - component: {fileID: 225367693}
+  - component: {fileID: 225367696}
   m_Layer: 0
   m_Name: Brick Slot (87)
   m_TagString: Untagged
@@ -1156,6 +1261,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 225367691}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &225367696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 225367691}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7da63ca3a4c49d04eb7f10976ab7a7c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &225453949
 GameObject:
   m_ObjectHideFlags: 0
@@ -1168,6 +1285,7 @@ GameObject:
   - component: {fileID: 225453953}
   - component: {fileID: 225453952}
   - component: {fileID: 225453951}
+  - component: {fileID: 225453954}
   m_Layer: 0
   m_Name: Brick Slot (55)
   m_TagString: Untagged
@@ -1260,6 +1378,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 225453949}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &225453954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 225453949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7da63ca3a4c49d04eb7f10976ab7a7c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &228951588
 GameObject:
   m_ObjectHideFlags: 0
@@ -1272,6 +1402,7 @@ GameObject:
   - component: {fileID: 228951592}
   - component: {fileID: 228951591}
   - component: {fileID: 228951590}
+  - component: {fileID: 228951593}
   m_Layer: 0
   m_Name: Brick Slot (1)
   m_TagString: Untagged
@@ -1364,6 +1495,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 228951588}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &228951593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 228951588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7da63ca3a4c49d04eb7f10976ab7a7c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &253188156
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1545,6 +1688,7 @@ GameObject:
   - component: {fileID: 253485797}
   - component: {fileID: 253485796}
   - component: {fileID: 253485795}
+  - component: {fileID: 253485798}
   m_Layer: 0
   m_Name: Brick Slot (23)
   m_TagString: Untagged
@@ -1637,6 +1781,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 253485793}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &253485798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 253485793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7da63ca3a4c49d04eb7f10976ab7a7c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &263219819
 GameObject:
   m_ObjectHideFlags: 0
@@ -1649,6 +1805,7 @@ GameObject:
   - component: {fileID: 263219823}
   - component: {fileID: 263219822}
   - component: {fileID: 263219821}
+  - component: {fileID: 263219824}
   m_Layer: 0
   m_Name: Brick Slot (56)
   m_TagString: Untagged
@@ -1741,6 +1898,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 263219819}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &263219824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 263219819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7da63ca3a4c49d04eb7f10976ab7a7c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &290079547
 GameObject:
   m_ObjectHideFlags: 0
@@ -1753,6 +1922,7 @@ GameObject:
   - component: {fileID: 290079551}
   - component: {fileID: 290079550}
   - component: {fileID: 290079549}
+  - component: {fileID: 290079552}
   m_Layer: 0
   m_Name: Brick Slot (61)
   m_TagString: Untagged
@@ -1845,6 +2015,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 290079547}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &290079552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 290079547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7da63ca3a4c49d04eb7f10976ab7a7c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &309447779
 GameObject:
   m_ObjectHideFlags: 0
@@ -1857,6 +2039,7 @@ GameObject:
   - component: {fileID: 309447783}
   - component: {fileID: 309447782}
   - component: {fileID: 309447781}
+  - component: {fileID: 309447784}
   m_Layer: 0
   m_Name: Brick Slot (36)
   m_TagString: Untagged
@@ -1949,6 +2132,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 309447779}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &309447784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 309447779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7da63ca3a4c49d04eb7f10976ab7a7c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &312744112
 GameObject:
   m_ObjectHideFlags: 0
@@ -1961,6 +2156,7 @@ GameObject:
   - component: {fileID: 312744116}
   - component: {fileID: 312744115}
   - component: {fileID: 312744114}
+  - component: {fileID: 312744117}
   m_Layer: 0
   m_Name: Brick Slot (18)
   m_TagString: Untagged
@@ -2053,6 +2249,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 312744112}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &312744117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 312744112}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7da63ca3a4c49d04eb7f10976ab7a7c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -2151,7 +2359,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_RenderShadows: 1
+  m_RenderShadows: 0
   m_RequiresDepthTextureOption: 2
   m_RequiresOpaqueTextureOption: 2
   m_CameraType: 0
@@ -2163,7 +2371,7 @@ MonoBehaviour:
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
   m_RenderPostProcessing: 1
-  m_Antialiasing: 0
+  m_Antialiasing: 1
   m_AntialiasingQuality: 2
   m_StopNaN: 0
   m_Dithering: 0
@@ -2198,6 +2406,7 @@ GameObject:
   - component: {fileID: 349922149}
   - component: {fileID: 349922148}
   - component: {fileID: 349922147}
+  - component: {fileID: 349922150}
   m_Layer: 0
   m_Name: Brick Slot (88)
   m_TagString: Untagged
@@ -2290,6 +2499,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 349922145}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &349922150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 349922145}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7da63ca3a4c49d04eb7f10976ab7a7c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &363507492
 GameObject:
   m_ObjectHideFlags: 0
@@ -2302,6 +2523,7 @@ GameObject:
   - component: {fileID: 363507496}
   - component: {fileID: 363507495}
   - component: {fileID: 363507494}
+  - component: {fileID: 363507497}
   m_Layer: 0
   m_Name: Brick Slot (21)
   m_TagString: Untagged
@@ -2394,6 +2616,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 363507492}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &363507497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 363507492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7da63ca3a4c49d04eb7f10976ab7a7c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &369581240
 GameObject:
   m_ObjectHideFlags: 0
@@ -2406,6 +2640,7 @@ GameObject:
   - component: {fileID: 369581244}
   - component: {fileID: 369581243}
   - component: {fileID: 369581242}
+  - component: {fileID: 369581245}
   m_Layer: 0
   m_Name: Brick Slot (24)
   m_TagString: Untagged
@@ -2498,6 +2733,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 369581240}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &369581245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 369581240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7da63ca3a4c49d04eb7f10976ab7a7c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &409918125 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7007647345717036057, guid: aa3f2227c46cea04ca5bc68e39746971,
@@ -2631,6 +2878,7 @@ GameObject:
   - component: {fileID: 459289471}
   - component: {fileID: 459289470}
   - component: {fileID: 459289469}
+  - component: {fileID: 459289472}
   m_Layer: 0
   m_Name: Brick Slot (65)
   m_TagString: Untagged
@@ -2723,6 +2971,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 459289467}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &459289472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 459289467}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7da63ca3a4c49d04eb7f10976ab7a7c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &467684243 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8170153791668043268, guid: 0d230cc8be529a542a08cb878ab14b18,
@@ -2915,6 +3175,7 @@ GameObject:
   - component: {fileID: 571827582}
   - component: {fileID: 571827581}
   - component: {fileID: 571827580}
+  - component: {fileID: 571827583}
   m_Layer: 0
   m_Name: Brick Slot (74)
   m_TagString: Untagged
@@ -3007,6 +3268,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 571827578}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &571827583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 571827578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7da63ca3a4c49d04eb7f10976ab7a7c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &666348217
 GameObject:
   m_ObjectHideFlags: 0
@@ -3019,6 +3292,7 @@ GameObject:
   - component: {fileID: 666348221}
   - component: {fileID: 666348220}
   - component: {fileID: 666348219}
+  - component: {fileID: 666348222}
   m_Layer: 0
   m_Name: Brick Slot (79)
   m_TagString: Untagged
@@ -3111,6 +3385,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 666348217}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &666348222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 666348217}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7da63ca3a4c49d04eb7f10976ab7a7c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &673211918
 GameObject:
   m_ObjectHideFlags: 0
@@ -3123,6 +3409,7 @@ GameObject:
   - component: {fileID: 673211922}
   - component: {fileID: 673211921}
   - component: {fileID: 673211920}
+  - component: {fileID: 673211923}
   m_Layer: 0
   m_Name: Brick Slot (64)
   m_TagString: Untagged
@@ -3215,6 +3502,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 673211918}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &673211923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 673211918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7da63ca3a4c49d04eb7f10976ab7a7c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &719840355
 GameObject:
   m_ObjectHideFlags: 0
@@ -3227,6 +3526,7 @@ GameObject:
   - component: {fileID: 719840359}
   - component: {fileID: 719840358}
   - component: {fileID: 719840357}
+  - component: {fileID: 719840360}
   m_Layer: 0
   m_Name: Brick Slot (40)
   m_TagString: Untagged
@@ -3319,6 +3619,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 719840355}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &719840360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 719840355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7da63ca3a4c49d04eb7f10976ab7a7c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &725845849
 GameObject:
   m_ObjectHideFlags: 0
@@ -3331,6 +3643,7 @@ GameObject:
   - component: {fileID: 725845853}
   - component: {fileID: 725845852}
   - component: {fileID: 725845851}
+  - component: {fileID: 725845854}
   m_Layer: 0
   m_Name: Brick Slot (86)
   m_TagString: Untagged
@@ -3423,6 +3736,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 725845849}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &725845854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 725845849}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7da63ca3a4c49d04eb7f10976ab7a7c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &758509310
 GameObject:
   m_ObjectHideFlags: 0
@@ -3435,6 +3760,7 @@ GameObject:
   - component: {fileID: 758509314}
   - component: {fileID: 758509313}
   - component: {fileID: 758509312}
+  - component: {fileID: 758509315}
   m_Layer: 0
   m_Name: Brick Slot (59)
   m_TagString: Untagged
@@ -3527,6 +3853,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 758509310}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &758509315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 758509310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7da63ca3a4c49d04eb7f10976ab7a7c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &773591653
 GameObject:
   m_ObjectHideFlags: 0
@@ -3539,6 +3877,7 @@ GameObject:
   - component: {fileID: 773591657}
   - component: {fileID: 773591656}
   - component: {fileID: 773591655}
+  - component: {fileID: 773591658}
   m_Layer: 0
   m_Name: Brick Slot (50)
   m_TagString: Untagged
@@ -3631,6 +3970,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 773591653}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &773591658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 773591653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7da63ca3a4c49d04eb7f10976ab7a7c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &785086127
 GameObject:
   m_ObjectHideFlags: 0
@@ -3643,6 +3994,7 @@ GameObject:
   - component: {fileID: 785086131}
   - component: {fileID: 785086130}
   - component: {fileID: 785086129}
+  - component: {fileID: 785086132}
   m_Layer: 0
   m_Name: Brick Slot (76)
   m_TagString: Untagged
@@ -3735,6 +4087,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 785086127}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &785086132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 785086127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7da63ca3a4c49d04eb7f10976ab7a7c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &787277659
 GameObject:
   m_ObjectHideFlags: 0
@@ -3844,6 +4208,7 @@ GameObject:
   - component: {fileID: 827517752}
   - component: {fileID: 827517751}
   - component: {fileID: 827517750}
+  - component: {fileID: 827517753}
   m_Layer: 0
   m_Name: Brick Slot (90)
   m_TagString: Untagged
@@ -3936,6 +4301,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 827517748}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &827517753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 827517748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7da63ca3a4c49d04eb7f10976ab7a7c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -3997,6 +4374,7 @@ GameObject:
   - component: {fileID: 839381023}
   - component: {fileID: 839381022}
   - component: {fileID: 839381021}
+  - component: {fileID: 839381024}
   m_Layer: 0
   m_Name: Brick Slot (47)
   m_TagString: Untagged
@@ -4089,6 +4467,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 839381019}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &839381024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 839381019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7da63ca3a4c49d04eb7f10976ab7a7c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &863306551
 GameObject:
   m_ObjectHideFlags: 0
@@ -4101,6 +4491,7 @@ GameObject:
   - component: {fileID: 863306555}
   - component: {fileID: 863306554}
   - component: {fileID: 863306553}
+  - component: {fileID: 863306556}
   m_Layer: 0
   m_Name: Brick Slot (84)
   m_TagString: Untagged
@@ -4193,6 +4584,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 863306551}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &863306556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 863306551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7da63ca3a4c49d04eb7f10976ab7a7c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &879370249
 GameObject:
   m_ObjectHideFlags: 0
@@ -4205,6 +4608,7 @@ GameObject:
   - component: {fileID: 879370253}
   - component: {fileID: 879370252}
   - component: {fileID: 879370251}
+  - component: {fileID: 879370254}
   m_Layer: 0
   m_Name: Brick Slot (8)
   m_TagString: Untagged
@@ -4297,6 +4701,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 879370249}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &879370254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 879370249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7da63ca3a4c49d04eb7f10976ab7a7c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &884204461
 GameObject:
   m_ObjectHideFlags: 0
@@ -4309,6 +4725,7 @@ GameObject:
   - component: {fileID: 884204465}
   - component: {fileID: 884204464}
   - component: {fileID: 884204463}
+  - component: {fileID: 884204466}
   m_Layer: 0
   m_Name: Brick Slot (75)
   m_TagString: Untagged
@@ -4401,6 +4818,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 884204461}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &884204466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 884204461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7da63ca3a4c49d04eb7f10976ab7a7c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &910146183
 GameObject:
   m_ObjectHideFlags: 0
@@ -4413,6 +4842,7 @@ GameObject:
   - component: {fileID: 910146187}
   - component: {fileID: 910146186}
   - component: {fileID: 910146185}
+  - component: {fileID: 910146188}
   m_Layer: 0
   m_Name: Brick Slot (9)
   m_TagString: Untagged
@@ -4505,6 +4935,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 910146183}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &910146188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 910146183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7da63ca3a4c49d04eb7f10976ab7a7c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &918795882
 GameObject:
   m_ObjectHideFlags: 0
@@ -4517,6 +4959,7 @@ GameObject:
   - component: {fileID: 918795886}
   - component: {fileID: 918795885}
   - component: {fileID: 918795884}
+  - component: {fileID: 918795887}
   m_Layer: 0
   m_Name: Brick Slot (44)
   m_TagString: Untagged
@@ -4609,6 +5052,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 918795882}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &918795887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 918795882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7da63ca3a4c49d04eb7f10976ab7a7c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &937393775
 GameObject:
   m_ObjectHideFlags: 0
@@ -4621,6 +5076,7 @@ GameObject:
   - component: {fileID: 937393779}
   - component: {fileID: 937393778}
   - component: {fileID: 937393777}
+  - component: {fileID: 937393780}
   m_Layer: 0
   m_Name: Brick Slot (11)
   m_TagString: Untagged
@@ -4713,6 +5169,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 937393775}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &937393780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 937393775}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7da63ca3a4c49d04eb7f10976ab7a7c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &971293621
 GameObject:
   m_ObjectHideFlags: 0
@@ -4725,6 +5193,7 @@ GameObject:
   - component: {fileID: 971293625}
   - component: {fileID: 971293624}
   - component: {fileID: 971293623}
+  - component: {fileID: 971293626}
   m_Layer: 0
   m_Name: Brick Slot (20)
   m_TagString: Untagged
@@ -4817,6 +5286,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 971293621}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &971293626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 971293621}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7da63ca3a4c49d04eb7f10976ab7a7c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &980506378
 GameObject:
   m_ObjectHideFlags: 0
@@ -4829,6 +5310,7 @@ GameObject:
   - component: {fileID: 980506382}
   - component: {fileID: 980506381}
   - component: {fileID: 980506380}
+  - component: {fileID: 980506383}
   m_Layer: 0
   m_Name: Brick Slot (60)
   m_TagString: Untagged
@@ -4921,6 +5403,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 980506378}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &980506383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 980506378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7da63ca3a4c49d04eb7f10976ab7a7c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &981643922
 GameObject:
   m_ObjectHideFlags: 0
@@ -4933,6 +5427,7 @@ GameObject:
   - component: {fileID: 981643926}
   - component: {fileID: 981643925}
   - component: {fileID: 981643924}
+  - component: {fileID: 981643927}
   m_Layer: 0
   m_Name: Brick Slot (30)
   m_TagString: Untagged
@@ -5025,6 +5520,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 981643922}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &981643927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 981643922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7da63ca3a4c49d04eb7f10976ab7a7c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &985370291
 GameObject:
   m_ObjectHideFlags: 0
@@ -5037,6 +5544,7 @@ GameObject:
   - component: {fileID: 985370295}
   - component: {fileID: 985370294}
   - component: {fileID: 985370293}
+  - component: {fileID: 985370296}
   m_Layer: 0
   m_Name: Brick Slot (54)
   m_TagString: Untagged
@@ -5129,6 +5637,63 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 985370291}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &985370296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 985370291}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7da63ca3a4c49d04eb7f10976ab7a7c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &988812657
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 988812658}
+  - component: {fileID: 988812659}
+  m_Layer: 0
+  m_Name: CollectedBricksController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &988812658
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 988812657}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1562977215}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &988812659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 988812657}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9114b3707fe8bc649859014431fe76e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerBrickHolder: {fileID: 1482831385}
 --- !u!1 &992517718
 GameObject:
   m_ObjectHideFlags: 0
@@ -5242,6 +5807,7 @@ GameObject:
   - component: {fileID: 1003032453}
   - component: {fileID: 1003032452}
   - component: {fileID: 1003032451}
+  - component: {fileID: 1003032454}
   m_Layer: 0
   m_Name: Brick Slot (43)
   m_TagString: Untagged
@@ -5334,6 +5900,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1003032449}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1003032454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1003032449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7da63ca3a4c49d04eb7f10976ab7a7c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1023127697
 GameObject:
   m_ObjectHideFlags: 0
@@ -5346,6 +5924,7 @@ GameObject:
   - component: {fileID: 1023127701}
   - component: {fileID: 1023127700}
   - component: {fileID: 1023127699}
+  - component: {fileID: 1023127702}
   m_Layer: 0
   m_Name: Brick Slot (73)
   m_TagString: Untagged
@@ -5438,18 +6017,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1023127697}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &1058959241 stripped
-Rigidbody:
-  m_CorrespondingSourceObject: {fileID: 5780062896170156380, guid: 6eff4302553087e4b85a12117d7b8645,
-    type: 3}
-  m_PrefabInstance: {fileID: 2024935784605517910}
+--- !u!114 &1023127702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
---- !u!95 &1058959243 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 3634926710994038550, guid: 6eff4302553087e4b85a12117d7b8645,
-    type: 3}
-  m_PrefabInstance: {fileID: 2024935784605517910}
-  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1023127697}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7da63ca3a4c49d04eb7f10976ab7a7c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1058959244 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6700187827314115180, guid: 6eff4302553087e4b85a12117d7b8645,
@@ -5468,6 +6047,7 @@ GameObject:
   - component: {fileID: 1061794707}
   - component: {fileID: 1061794706}
   - component: {fileID: 1061794705}
+  - component: {fileID: 1061794708}
   m_Layer: 0
   m_Name: Brick Slot (57)
   m_TagString: Untagged
@@ -5560,6 +6140,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1061794703}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1061794708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1061794703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7da63ca3a4c49d04eb7f10976ab7a7c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1063984590
 GameObject:
   m_ObjectHideFlags: 0
@@ -5572,6 +6164,7 @@ GameObject:
   - component: {fileID: 1063984594}
   - component: {fileID: 1063984593}
   - component: {fileID: 1063984592}
+  - component: {fileID: 1063984595}
   m_Layer: 0
   m_Name: Brick Slot (13)
   m_TagString: Untagged
@@ -5664,6 +6257,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1063984590}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1063984595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1063984590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7da63ca3a4c49d04eb7f10976ab7a7c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1100024200
 GameObject:
   m_ObjectHideFlags: 0
@@ -5773,6 +6378,7 @@ GameObject:
   - component: {fileID: 1100900643}
   - component: {fileID: 1100900642}
   - component: {fileID: 1100900641}
+  - component: {fileID: 1100900644}
   m_Layer: 0
   m_Name: Brick Slot (35)
   m_TagString: Untagged
@@ -5865,6 +6471,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1100900639}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1100900644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1100900639}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7da63ca3a4c49d04eb7f10976ab7a7c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1112666102
 GameObject:
   m_ObjectHideFlags: 0
@@ -5944,6 +6562,7 @@ GameObject:
   - component: {fileID: 1126973015}
   - component: {fileID: 1126973014}
   - component: {fileID: 1126973013}
+  - component: {fileID: 1126973016}
   m_Layer: 0
   m_Name: Brick Slot (6)
   m_TagString: Untagged
@@ -6036,6 +6655,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1126973011}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1126973016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1126973011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7da63ca3a4c49d04eb7f10976ab7a7c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1133035583
 GameObject:
   m_ObjectHideFlags: 0
@@ -6145,6 +6776,7 @@ GameObject:
   - component: {fileID: 1148411886}
   - component: {fileID: 1148411885}
   - component: {fileID: 1148411884}
+  - component: {fileID: 1148411887}
   m_Layer: 0
   m_Name: Brick Slot (52)
   m_TagString: Untagged
@@ -6237,6 +6869,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1148411882}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1148411887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1148411882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7da63ca3a4c49d04eb7f10976ab7a7c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1163842988
 GameObject:
   m_ObjectHideFlags: 0
@@ -6249,6 +6893,7 @@ GameObject:
   - component: {fileID: 1163842992}
   - component: {fileID: 1163842991}
   - component: {fileID: 1163842990}
+  - component: {fileID: 1163842993}
   m_Layer: 0
   m_Name: Brick Slot (68)
   m_TagString: Untagged
@@ -6341,6 +6986,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1163842988}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1163842993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1163842988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7da63ca3a4c49d04eb7f10976ab7a7c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1170655354
 GameObject:
   m_ObjectHideFlags: 0
@@ -6353,6 +7010,7 @@ GameObject:
   - component: {fileID: 1170655358}
   - component: {fileID: 1170655357}
   - component: {fileID: 1170655356}
+  - component: {fileID: 1170655359}
   m_Layer: 0
   m_Name: Brick Slot (3)
   m_TagString: Untagged
@@ -6445,6 +7103,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1170655354}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1170655359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1170655354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7da63ca3a4c49d04eb7f10976ab7a7c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1213485404
 GameObject:
   m_ObjectHideFlags: 0
@@ -6457,6 +7127,7 @@ GameObject:
   - component: {fileID: 1213485408}
   - component: {fileID: 1213485407}
   - component: {fileID: 1213485406}
+  - component: {fileID: 1213485409}
   m_Layer: 0
   m_Name: Brick Slot (83)
   m_TagString: Untagged
@@ -6549,6 +7220,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1213485404}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1213485409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1213485404}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7da63ca3a4c49d04eb7f10976ab7a7c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1218217888
 GameObject:
   m_ObjectHideFlags: 0
@@ -6561,6 +7244,7 @@ GameObject:
   - component: {fileID: 1218217892}
   - component: {fileID: 1218217891}
   - component: {fileID: 1218217890}
+  - component: {fileID: 1218217893}
   m_Layer: 0
   m_Name: Brick Slot (53)
   m_TagString: Untagged
@@ -6653,6 +7337,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1218217888}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1218217893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1218217888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7da63ca3a4c49d04eb7f10976ab7a7c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1219810262
 GameObject:
   m_ObjectHideFlags: 0
@@ -6665,6 +7361,7 @@ GameObject:
   - component: {fileID: 1219810266}
   - component: {fileID: 1219810265}
   - component: {fileID: 1219810264}
+  - component: {fileID: 1219810267}
   m_Layer: 0
   m_Name: Brick Slot (51)
   m_TagString: Untagged
@@ -6757,6 +7454,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1219810262}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1219810267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1219810262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7da63ca3a4c49d04eb7f10976ab7a7c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1228450053
 GameObject:
   m_ObjectHideFlags: 0
@@ -6769,6 +7478,7 @@ GameObject:
   - component: {fileID: 1228450057}
   - component: {fileID: 1228450056}
   - component: {fileID: 1228450055}
+  - component: {fileID: 1228450058}
   m_Layer: 0
   m_Name: Brick Slot (31)
   m_TagString: Untagged
@@ -6861,6 +7571,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1228450053}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1228450058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1228450053}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7da63ca3a4c49d04eb7f10976ab7a7c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1229134656
 GameObject:
   m_ObjectHideFlags: 0
@@ -6970,6 +7692,7 @@ GameObject:
   - component: {fileID: 1232127923}
   - component: {fileID: 1232127922}
   - component: {fileID: 1232127921}
+  - component: {fileID: 1232127924}
   m_Layer: 0
   m_Name: Brick Slot (72)
   m_TagString: Untagged
@@ -7062,6 +7785,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1232127919}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1232127924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1232127919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7da63ca3a4c49d04eb7f10976ab7a7c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1280287694
 GameObject:
   m_ObjectHideFlags: 0
@@ -7171,6 +7906,7 @@ GameObject:
   - component: {fileID: 1291549120}
   - component: {fileID: 1291549119}
   - component: {fileID: 1291549118}
+  - component: {fileID: 1291549121}
   m_Layer: 0
   m_Name: Brick Slot (29)
   m_TagString: Untagged
@@ -7263,6 +7999,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1291549116}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1291549121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1291549116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7da63ca3a4c49d04eb7f10976ab7a7c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1292094708
 GameObject:
   m_ObjectHideFlags: 0
@@ -7275,6 +8023,7 @@ GameObject:
   - component: {fileID: 1292094712}
   - component: {fileID: 1292094711}
   - component: {fileID: 1292094710}
+  - component: {fileID: 1292094713}
   m_Layer: 0
   m_Name: Brick Slot (80)
   m_TagString: Untagged
@@ -7367,6 +8116,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1292094708}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1292094713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1292094708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7da63ca3a4c49d04eb7f10976ab7a7c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1297206983
 GameObject:
   m_ObjectHideFlags: 0
@@ -7379,6 +8140,7 @@ GameObject:
   - component: {fileID: 1297206987}
   - component: {fileID: 1297206986}
   - component: {fileID: 1297206985}
+  - component: {fileID: 1297206988}
   m_Layer: 0
   m_Name: Brick Slot (16)
   m_TagString: Untagged
@@ -7471,6 +8233,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1297206983}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1297206988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1297206983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7da63ca3a4c49d04eb7f10976ab7a7c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1317547498
 GameObject:
   m_ObjectHideFlags: 0
@@ -7583,6 +8357,7 @@ GameObject:
   - component: {fileID: 1345606198}
   - component: {fileID: 1345606197}
   - component: {fileID: 1345606196}
+  - component: {fileID: 1345606199}
   m_Layer: 0
   m_Name: Brick Slot (28)
   m_TagString: Untagged
@@ -7675,6 +8450,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1345606194}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1345606199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1345606194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7da63ca3a4c49d04eb7f10976ab7a7c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1373456415
 GameObject:
   m_ObjectHideFlags: 0
@@ -7687,6 +8474,7 @@ GameObject:
   - component: {fileID: 1373456419}
   - component: {fileID: 1373456418}
   - component: {fileID: 1373456417}
+  - component: {fileID: 1373456420}
   m_Layer: 0
   m_Name: Brick Slot (10)
   m_TagString: Untagged
@@ -7779,6 +8567,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1373456415}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1373456420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1373456415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7da63ca3a4c49d04eb7f10976ab7a7c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1387746895
 GameObject:
   m_ObjectHideFlags: 0
@@ -7791,6 +8591,7 @@ GameObject:
   - component: {fileID: 1387746899}
   - component: {fileID: 1387746898}
   - component: {fileID: 1387746897}
+  - component: {fileID: 1387746900}
   m_Layer: 0
   m_Name: Brick Slot (17)
   m_TagString: Untagged
@@ -7883,6 +8684,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1387746895}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1387746900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1387746895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7da63ca3a4c49d04eb7f10976ab7a7c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1412962856
 GameObject:
   m_ObjectHideFlags: 0
@@ -7928,6 +8741,7 @@ GameObject:
   - component: {fileID: 1458831786}
   - component: {fileID: 1458831785}
   - component: {fileID: 1458831784}
+  - component: {fileID: 1458831787}
   m_Layer: 0
   m_Name: Brick Slot (81)
   m_TagString: Untagged
@@ -8020,6 +8834,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1458831782}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1458831787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1458831782}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7da63ca3a4c49d04eb7f10976ab7a7c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1468410975
 GameObject:
   m_ObjectHideFlags: 0
@@ -8032,6 +8858,7 @@ GameObject:
   - component: {fileID: 1468410979}
   - component: {fileID: 1468410978}
   - component: {fileID: 1468410977}
+  - component: {fileID: 1468410980}
   m_Layer: 0
   m_Name: Brick Slot (14)
   m_TagString: Untagged
@@ -8124,6 +8951,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1468410975}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1468410980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1468410975}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7da63ca3a4c49d04eb7f10976ab7a7c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1471159240
 GameObject:
   m_ObjectHideFlags: 0
@@ -8136,6 +8975,7 @@ GameObject:
   - component: {fileID: 1471159244}
   - component: {fileID: 1471159243}
   - component: {fileID: 1471159242}
+  - component: {fileID: 1471159245}
   m_Layer: 0
   m_Name: Brick Slot (89)
   m_TagString: Untagged
@@ -8228,6 +9068,24 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1471159240}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1471159245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1471159240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7da63ca3a4c49d04eb7f10976ab7a7c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1482831385 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6876480648676469410, guid: 6eff4302553087e4b85a12117d7b8645,
+    type: 3}
+  m_PrefabInstance: {fileID: 2024935784605517910}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1495352249
 GameObject:
   m_ObjectHideFlags: 0
@@ -8240,6 +9098,7 @@ GameObject:
   - component: {fileID: 1495352253}
   - component: {fileID: 1495352252}
   - component: {fileID: 1495352251}
+  - component: {fileID: 1495352254}
   m_Layer: 0
   m_Name: Brick Slot (39)
   m_TagString: Untagged
@@ -8332,6 +9191,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1495352249}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1495352254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1495352249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7da63ca3a4c49d04eb7f10976ab7a7c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1512946958
 GameObject:
   m_ObjectHideFlags: 0
@@ -8380,6 +9251,7 @@ GameObject:
   - component: {fileID: 1547936298}
   - component: {fileID: 1547936297}
   - component: {fileID: 1547936296}
+  - component: {fileID: 1547936299}
   m_Layer: 0
   m_Name: Brick Slot (48)
   m_TagString: Untagged
@@ -8472,6 +9344,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1547936294}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1547936299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1547936294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7da63ca3a4c49d04eb7f10976ab7a7c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1556654512
 GameObject:
   m_ObjectHideFlags: 0
@@ -8484,6 +9368,7 @@ GameObject:
   - component: {fileID: 1556654516}
   - component: {fileID: 1556654515}
   - component: {fileID: 1556654514}
+  - component: {fileID: 1556654517}
   m_Layer: 0
   m_Name: Brick Slot (27)
   m_TagString: Untagged
@@ -8576,6 +9461,81 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1556654512}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1556654517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1556654512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7da63ca3a4c49d04eb7f10976ab7a7c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1562977214
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1562977215}
+  m_Layer: 0
+  m_Name: Scripts
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1562977215
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1562977214}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 988812658}
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1621215890
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1621215891}
+  m_Layer: 0
+  m_Name: ------------------
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1621215891
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1621215890}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1651899303
 GameObject:
   m_ObjectHideFlags: 0
@@ -8588,6 +9548,7 @@ GameObject:
   - component: {fileID: 1651899307}
   - component: {fileID: 1651899306}
   - component: {fileID: 1651899305}
+  - component: {fileID: 1651899308}
   m_Layer: 0
   m_Name: Brick Slot (71)
   m_TagString: Untagged
@@ -8680,6 +9641,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1651899303}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1651899308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1651899303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7da63ca3a4c49d04eb7f10976ab7a7c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1682978754
 GameObject:
   m_ObjectHideFlags: 0
@@ -8692,6 +9665,7 @@ GameObject:
   - component: {fileID: 1682978758}
   - component: {fileID: 1682978757}
   - component: {fileID: 1682978756}
+  - component: {fileID: 1682978759}
   m_Layer: 0
   m_Name: Brick Slot (25)
   m_TagString: Untagged
@@ -8784,6 +9758,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1682978754}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1682978759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1682978754}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7da63ca3a4c49d04eb7f10976ab7a7c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1700125149
 GameObject:
   m_ObjectHideFlags: 0
@@ -8796,6 +9782,7 @@ GameObject:
   - component: {fileID: 1700125153}
   - component: {fileID: 1700125152}
   - component: {fileID: 1700125151}
+  - component: {fileID: 1700125154}
   m_Layer: 0
   m_Name: Brick Slot (15)
   m_TagString: Untagged
@@ -8888,6 +9875,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1700125149}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1700125154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1700125149}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7da63ca3a4c49d04eb7f10976ab7a7c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1701343311
 GameObject:
   m_ObjectHideFlags: 0
@@ -8900,6 +9899,7 @@ GameObject:
   - component: {fileID: 1701343315}
   - component: {fileID: 1701343314}
   - component: {fileID: 1701343313}
+  - component: {fileID: 1701343316}
   m_Layer: 0
   m_Name: Brick Slot (38)
   m_TagString: Untagged
@@ -8992,6 +9992,49 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1701343311}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1701343316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1701343311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7da63ca3a4c49d04eb7f10976ab7a7c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1716250414
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1716250415}
+  m_Layer: 0
+  m_Name: ------------------
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1716250415
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1716250414}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1733438397
 GameObject:
   m_ObjectHideFlags: 0
@@ -9004,6 +10047,7 @@ GameObject:
   - component: {fileID: 1733438401}
   - component: {fileID: 1733438400}
   - component: {fileID: 1733438399}
+  - component: {fileID: 1733438402}
   m_Layer: 0
   m_Name: Brick Slot (33)
   m_TagString: Untagged
@@ -9096,6 +10140,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1733438397}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1733438402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1733438397}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7da63ca3a4c49d04eb7f10976ab7a7c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1740290103
 GameObject:
   m_ObjectHideFlags: 0
@@ -9108,6 +10164,7 @@ GameObject:
   - component: {fileID: 1740290107}
   - component: {fileID: 1740290106}
   - component: {fileID: 1740290105}
+  - component: {fileID: 1740290108}
   m_Layer: 0
   m_Name: Brick Slot (2)
   m_TagString: Untagged
@@ -9200,6 +10257,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1740290103}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1740290108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1740290103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7da63ca3a4c49d04eb7f10976ab7a7c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1741849451
 GameObject:
   m_ObjectHideFlags: 0
@@ -9212,6 +10281,7 @@ GameObject:
   - component: {fileID: 1741849455}
   - component: {fileID: 1741849454}
   - component: {fileID: 1741849453}
+  - component: {fileID: 1741849456}
   m_Layer: 0
   m_Name: Brick Slot (34)
   m_TagString: Untagged
@@ -9304,6 +10374,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1741849451}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1741849456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1741849451}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7da63ca3a4c49d04eb7f10976ab7a7c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1765286530
 GameObject:
   m_ObjectHideFlags: 0
@@ -9316,6 +10398,7 @@ GameObject:
   - component: {fileID: 1765286534}
   - component: {fileID: 1765286533}
   - component: {fileID: 1765286532}
+  - component: {fileID: 1765286535}
   m_Layer: 0
   m_Name: Brick Slot (19)
   m_TagString: Untagged
@@ -9408,6 +10491,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1765286530}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1765286535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1765286530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7da63ca3a4c49d04eb7f10976ab7a7c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1807907878
 GameObject:
   m_ObjectHideFlags: 0
@@ -9420,6 +10515,7 @@ GameObject:
   - component: {fileID: 1807907882}
   - component: {fileID: 1807907881}
   - component: {fileID: 1807907880}
+  - component: {fileID: 1807907883}
   m_Layer: 0
   m_Name: Brick Slot (70)
   m_TagString: Untagged
@@ -9512,6 +10608,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1807907878}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1807907883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1807907878}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7da63ca3a4c49d04eb7f10976ab7a7c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1837325379
 GameObject:
   m_ObjectHideFlags: 0
@@ -9524,6 +10632,7 @@ GameObject:
   - component: {fileID: 1837325383}
   - component: {fileID: 1837325382}
   - component: {fileID: 1837325381}
+  - component: {fileID: 1837325384}
   m_Layer: 0
   m_Name: Brick Slot (4)
   m_TagString: Untagged
@@ -9616,6 +10725,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1837325379}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1837325384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1837325379}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7da63ca3a4c49d04eb7f10976ab7a7c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1860308075
 GameObject:
   m_ObjectHideFlags: 0
@@ -9725,6 +10846,7 @@ GameObject:
   - component: {fileID: 1889626329}
   - component: {fileID: 1889626328}
   - component: {fileID: 1889626327}
+  - component: {fileID: 1889626330}
   m_Layer: 0
   m_Name: Brick Slot (22)
   m_TagString: Untagged
@@ -9817,6 +10939,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1889626325}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1889626330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1889626325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7da63ca3a4c49d04eb7f10976ab7a7c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1893779470
 GameObject:
   m_ObjectHideFlags: 0
@@ -9829,6 +10963,7 @@ GameObject:
   - component: {fileID: 1893779474}
   - component: {fileID: 1893779473}
   - component: {fileID: 1893779472}
+  - component: {fileID: 1893779475}
   m_Layer: 0
   m_Name: Brick Slot (66)
   m_TagString: Untagged
@@ -9921,6 +11056,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1893779470}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1893779475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1893779470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7da63ca3a4c49d04eb7f10976ab7a7c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1945208473
 GameObject:
   m_ObjectHideFlags: 0
@@ -9933,6 +11080,7 @@ GameObject:
   - component: {fileID: 1945208477}
   - component: {fileID: 1945208476}
   - component: {fileID: 1945208475}
+  - component: {fileID: 1945208478}
   m_Layer: 0
   m_Name: Brick Slot (26)
   m_TagString: Untagged
@@ -10025,6 +11173,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1945208473}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1945208478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1945208473}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7da63ca3a4c49d04eb7f10976ab7a7c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1968776591
 GameObject:
   m_ObjectHideFlags: 0
@@ -10037,6 +11197,7 @@ GameObject:
   - component: {fileID: 1968776595}
   - component: {fileID: 1968776594}
   - component: {fileID: 1968776593}
+  - component: {fileID: 1968776596}
   m_Layer: 0
   m_Name: Brick Slot (42)
   m_TagString: Untagged
@@ -10129,6 +11290,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1968776591}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1968776596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1968776591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7da63ca3a4c49d04eb7f10976ab7a7c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2001762356
 GameObject:
   m_ObjectHideFlags: 0
@@ -10141,6 +11314,7 @@ GameObject:
   - component: {fileID: 2001762360}
   - component: {fileID: 2001762359}
   - component: {fileID: 2001762358}
+  - component: {fileID: 2001762361}
   m_Layer: 0
   m_Name: Brick Slot (45)
   m_TagString: Untagged
@@ -10233,6 +11407,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2001762356}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2001762361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2001762356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7da63ca3a4c49d04eb7f10976ab7a7c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2022313197
 GameObject:
   m_ObjectHideFlags: 0
@@ -10245,6 +11431,7 @@ GameObject:
   - component: {fileID: 2022313201}
   - component: {fileID: 2022313200}
   - component: {fileID: 2022313199}
+  - component: {fileID: 2022313202}
   m_Layer: 0
   m_Name: Brick Slot (7)
   m_TagString: Untagged
@@ -10337,6 +11524,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2022313197}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2022313202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2022313197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7da63ca3a4c49d04eb7f10976ab7a7c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2036560859
 GameObject:
   m_ObjectHideFlags: 0
@@ -10568,6 +11767,7 @@ GameObject:
   - component: {fileID: 2069688804}
   - component: {fileID: 2069688803}
   - component: {fileID: 2069688802}
+  - component: {fileID: 2069688805}
   m_Layer: 0
   m_Name: Brick Slot (32)
   m_TagString: Untagged
@@ -10660,6 +11860,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2069688800}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2069688805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2069688800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7da63ca3a4c49d04eb7f10976ab7a7c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2089798418
 GameObject:
   m_ObjectHideFlags: 0
@@ -10672,6 +11884,7 @@ GameObject:
   - component: {fileID: 2089798422}
   - component: {fileID: 2089798421}
   - component: {fileID: 2089798420}
+  - component: {fileID: 2089798423}
   m_Layer: 0
   m_Name: Brick Slot (12)
   m_TagString: Untagged
@@ -10764,6 +11977,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2089798418}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2089798423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2089798418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7da63ca3a4c49d04eb7f10976ab7a7c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2093372164
 GameObject:
   m_ObjectHideFlags: 0
@@ -10776,6 +12001,7 @@ GameObject:
   - component: {fileID: 2093372168}
   - component: {fileID: 2093372167}
   - component: {fileID: 2093372166}
+  - component: {fileID: 2093372169}
   m_Layer: 0
   m_Name: Brick Slot (46)
   m_TagString: Untagged
@@ -10868,6 +12094,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2093372164}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2093372169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2093372164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7da63ca3a4c49d04eb7f10976ab7a7c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2094625972
 GameObject:
   m_ObjectHideFlags: 0
@@ -10880,6 +12118,7 @@ GameObject:
   - component: {fileID: 2094625976}
   - component: {fileID: 2094625975}
   - component: {fileID: 2094625974}
+  - component: {fileID: 2094625977}
   m_Layer: 0
   m_Name: Brick Slot (58)
   m_TagString: Untagged
@@ -10972,6 +12211,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2094625972}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2094625977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2094625972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7da63ca3a4c49d04eb7f10976ab7a7c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2096801698
 GameObject:
   m_ObjectHideFlags: 0
@@ -10984,6 +12235,7 @@ GameObject:
   - component: {fileID: 2096801702}
   - component: {fileID: 2096801701}
   - component: {fileID: 2096801700}
+  - component: {fileID: 2096801703}
   m_Layer: 0
   m_Name: Brick Slot (85)
   m_TagString: Untagged
@@ -11076,6 +12328,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2096801698}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2096801703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2096801698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7da63ca3a4c49d04eb7f10976ab7a7c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2113692040
 GameObject:
   m_ObjectHideFlags: 0
@@ -11088,6 +12352,7 @@ GameObject:
   - component: {fileID: 2113692044}
   - component: {fileID: 2113692043}
   - component: {fileID: 2113692042}
+  - component: {fileID: 2113692045}
   m_Layer: 0
   m_Name: Brick Slot (77)
   m_TagString: Untagged
@@ -11180,6 +12445,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2113692040}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2113692045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2113692040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7da63ca3a4c49d04eb7f10976ab7a7c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2113750471
 GameObject:
   m_ObjectHideFlags: 0
@@ -11192,6 +12469,7 @@ GameObject:
   - component: {fileID: 2113750475}
   - component: {fileID: 2113750474}
   - component: {fileID: 2113750473}
+  - component: {fileID: 2113750476}
   m_Layer: 0
   m_Name: Brick Slot (63)
   m_TagString: Untagged
@@ -11284,6 +12562,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2113750471}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2113750476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2113750471}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7da63ca3a4c49d04eb7f10976ab7a7c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2140831296
 GameObject:
   m_ObjectHideFlags: 0
@@ -11296,6 +12586,7 @@ GameObject:
   - component: {fileID: 2140831300}
   - component: {fileID: 2140831299}
   - component: {fileID: 2140831298}
+  - component: {fileID: 2140831301}
   m_Layer: 0
   m_Name: Brick Slot (82)
   m_TagString: Untagged
@@ -11388,6 +12679,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2140831296}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2140831301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2140831296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7da63ca3a4c49d04eb7f10976ab7a7c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1957166066200843819
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11464,16 +12767,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5780062896170156380, guid: 6eff4302553087e4b85a12117d7b8645,
-        type: 3}
-      propertyPath: m_Constraints
-      value: 112
-      objectReference: {fileID: 0}
-    - target: {fileID: 5780062896170156380, guid: 6eff4302553087e4b85a12117d7b8645,
-        type: 3}
-      propertyPath: m_Interpolate
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6700187827314115180, guid: 6eff4302553087e4b85a12117d7b8645,
         type: 3}
       propertyPath: m_RootOrder
@@ -11536,24 +12829,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7975665375848435771, guid: 6eff4302553087e4b85a12117d7b8645,
         type: 3}
-      propertyPath: _animator
-      value: 
-      objectReference: {fileID: 1058959243}
-    - target: {fileID: 7975665375848435771, guid: 6eff4302553087e4b85a12117d7b8645,
-        type: 3}
       propertyPath: _joystick
       value: 
       objectReference: {fileID: 467684244}
-    - target: {fileID: 7975665375848435771, guid: 6eff4302553087e4b85a12117d7b8645,
-        type: 3}
-      propertyPath: _moveSpeed
-      value: 800
-      objectReference: {fileID: 0}
-    - target: {fileID: 7975665375848435771, guid: 6eff4302553087e4b85a12117d7b8645,
-        type: 3}
-      propertyPath: _rigidbody
-      value: 
-      objectReference: {fileID: 1058959241}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6eff4302553087e4b85a12117d7b8645, type: 3}
 --- !u!1001 &2808958965313120336
@@ -11637,6 +12915,7 @@ GameObject:
   - component: {fileID: 5691830508916565882}
   - component: {fileID: 5869544964838483772}
   - component: {fileID: 5869544964838483773}
+  - component: {fileID: 5869544964838483774}
   m_Layer: 0
   m_Name: Brick Slot
   m_TagString: Untagged
@@ -11651,6 +12930,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4021058104059096240, guid: 7a9b5f02c2079484687a305eba7329f2,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4120011621ac2ae4c9e1fcefc396e9a6, type: 2}
+    - target: {fileID: 4021058104059096240, guid: 7a9b5f02c2079484687a305eba7329f2,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: e273715f399a942418a4202430b78313, type: 2}
     - target: {fileID: 6139866146478835779, guid: 7a9b5f02c2079484687a305eba7329f2,
         type: 3}
       propertyPath: m_RootOrder
@@ -11798,6 +13087,18 @@ MonoBehaviour:
     type: 3}
   yellowBrick: {fileID: 4008349865870725665, guid: 06b5d666ef474c64189a558024b18dac,
     type: 3}
+--- !u!114 &5869544964838483774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3678462437861021265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7da63ca3a4c49d04eb7f10976ab7a7c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &7007647346121154228
 PrefabInstance:
   m_ObjectHideFlags: 0

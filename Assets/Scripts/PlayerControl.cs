@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class PlayerControl : MonoBehaviour
@@ -7,7 +8,9 @@ public class PlayerControl : MonoBehaviour
     [SerializeField] Animator _animator;
 
     [SerializeField] float _moveSpeed;
-    
+
+    public static Action collectBricks;
+
     void Update()
     {
         PlayerMovementWithJoystick();
@@ -28,6 +31,15 @@ public class PlayerControl : MonoBehaviour
         else
         {
             _animator.SetBool("isRunning", false);
+        }
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Blue"))
+        {
+            collectBricks.Invoke();
+            other.gameObject.SetActive(false);
         }
     }
 }
