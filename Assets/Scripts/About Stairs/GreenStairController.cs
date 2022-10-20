@@ -1,20 +1,20 @@
 using UnityEngine;
 
-public class BlueStairController : MonoBehaviour
+public class GreenStairController : MonoBehaviour
 {
     float moveTreshHold = 0.63f;
     void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.GetComponent<Player>())
         {
-            if (collision.gameObject.GetComponent<BluePlayer>())
+            if (collision.gameObject.GetComponent<GreenPlayer>())
             {
-                if (CollectedBricksController.bluePlayerBricks > 0)
+                if (CollectedBricksController.greenPlayerBricks > 0)
                 {
                     gameObject.transform.position = new Vector3(transform.position.x, transform.position.y,
                         transform.position.z + moveTreshHold);
                     
-                    CollectedBricksController.bluePlayerBricks -= 1;
+                    CollectedBricksController.greenPlayerBricks -= 1;
                 }
             }
             
@@ -23,7 +23,7 @@ public class BlueStairController : MonoBehaviour
                 gameObject.GetComponent<BoxCollider>().isTrigger = true;
             }
             
-            else if (collision.gameObject.GetComponent<GreenPlayer>())
+            else if (collision.gameObject.GetComponent<BluePlayer>())
             {
                 gameObject.GetComponent<BoxCollider>().isTrigger = true;
             }

@@ -5,6 +5,10 @@ public class CollectedBricksController : MonoBehaviour
     public GameObject playerBrickHolder;
 
     public static int bluePlayerBricks = 0;
+    public static int redPlayerBricks = 0;
+    public static int greenPlayerBricks = 0;
+    public static int yellowPlayerBricks = 0;
+
 
     void Start()
     {

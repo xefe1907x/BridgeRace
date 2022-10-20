@@ -1,25 +1,32 @@
+using DG.Tweening;
 using UnityEngine;
 
 public class Stairs : MonoBehaviour
 {
+    float colorChangeDuration = 0.1f;
+    void Start()
+    {
+        DOTween.Init();
+    }
+
     void BlueColorChange()
     {
-        gameObject.transform.GetComponent<Renderer>().material.color = new Color(0, 0, 255);
+        gameObject.transform.GetComponent<Renderer>().material.DOColor(Color.blue, colorChangeDuration);
     }
     
     void RedColorChange()
     {
-        gameObject.transform.GetComponent<Renderer>().material.color = new Color(255, 0, 0);
+        gameObject.transform.GetComponent<Renderer>().material.DOColor(Color.red, colorChangeDuration);
     }
     
     void GreenColorChange()
     {
-        gameObject.transform.GetComponent<Renderer>().material.color = new Color(0, 255, 0);
+        gameObject.transform.GetComponent<Renderer>().material.DOColor(Color.green, colorChangeDuration);
     }
     
     void YellowColorChange()
     {
-        gameObject.transform.GetComponent<Renderer>().material.color = new Color(255, 255, 0);
+        gameObject.transform.GetComponent<Renderer>().material.DOColor(Color.yellow, colorChangeDuration);
     }
     
     void OnTriggerEnter(Collider other)
