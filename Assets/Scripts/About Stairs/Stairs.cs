@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class Stairs : MonoBehaviour
 {
-    float colorChangeDuration = 0.1f;
+    float colorChangeDuration = 0.45f;
     void Start()
     {
         DOTween.Init();

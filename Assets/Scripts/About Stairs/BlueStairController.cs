@@ -1,8 +1,17 @@
+using System;
 using UnityEngine;
 
 public class BlueStairController : MonoBehaviour
 {
     float moveTreshHold = 0.63f;
+
+    Vector3 firstPosition;
+
+    void Start()
+    {
+        firstPosition = gameObject.transform.position;
+    }
+
     void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.GetComponent<Player>())
@@ -38,5 +47,6 @@ public class BlueStairController : MonoBehaviour
     void OnTriggerExit(Collider other)
     {
         gameObject.GetComponent<BoxCollider>().isTrigger = false;
+        transform.position = firstPosition;
     }
 }
