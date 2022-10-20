@@ -5,10 +5,12 @@ TagManager:
   serializedVersion: 2
   tags:
   - Fire
-  - Yellow
-  - Green
+  - Undefined
   - Blue
+  - Green
+  - Yellow
   - Red
+  - StairController
   layers:
   - Default
   - TransparentFX
