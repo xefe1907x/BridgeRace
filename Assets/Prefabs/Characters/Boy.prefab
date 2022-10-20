@@ -916,9 +916,10 @@ GameObject:
   - component: {fileID: 1605842065746907925}
   - component: {fileID: 5780062896170156380}
   - component: {fileID: 7975665375848435771}
+  - component: {fileID: 3609188145231575971}
   m_Layer: 0
   m_Name: Boy
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1007,6 +1008,18 @@ MonoBehaviour:
   _joystick: {fileID: 0}
   _animator: {fileID: 3634926710994038550}
   _moveSpeed: 800
+--- !u!114 &3609188145231575971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7683282305240182911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e135fbc3280087d4b83a8a1d531c5785, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8337420310240801020
 GameObject:
   m_ObjectHideFlags: 0
