@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class CameraFollow : MonoBehaviour
@@ -13,8 +10,6 @@ public class CameraFollow : MonoBehaviour
     {
         CameraFollowsPlayer();
     }
-
-    // 3.13   19.37   -28.18
     void CameraFollowsPlayer()
     {
         transform.position = target.position + offset;

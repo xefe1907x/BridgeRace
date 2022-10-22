@@ -4,10 +4,16 @@ using UnityEngine;
 
 public class GateDoorOpener : MonoBehaviour
 {
+    AudioSource audioSource;
+    public AudioClip openGateSound;
+    
     float doorTargetScale = 0.3f;
     float doorOpenTime = 1.5f;
+
+    public GameObject cannotPass;
     void Start()
     {
+        audioSource = gameObject.GetComponent<AudioSource>();
         DOTween.Init();
     }
 
@@ -22,6 +28,11 @@ public class GateDoorOpener : MonoBehaviour
     {
         if (other.gameObject.GetComponent<Player>())
         {
+            if (cannotPass.gameObject.activeInHierarchy)
+            {
+                cannotPass.gameObject.SetActive(false);
+                audioSource.PlayOneShot(openGateSound);
+            }
             gameObject.transform.DOScaleZ(doorTargetScale, doorOpenTime);
             StartCoroutine(nameof(OpenedDoorDestroyer));
         }

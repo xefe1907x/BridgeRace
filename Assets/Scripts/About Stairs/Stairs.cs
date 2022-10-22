@@ -3,10 +3,19 @@ using UnityEngine;
 
 public class Stairs : MonoBehaviour
 {
+    AudioSource audioSource;
+    public AudioClip makeStairSound;
+    
     float colorChangeDuration = 0.45f;
     void Start()
     {
         DOTween.Init();
+        audioSource = gameObject.GetComponent<AudioSource>();
+    }
+
+    void BuildStairsSoundActivator()
+    {
+        audioSource.PlayOneShot(makeStairSound);
     }
 
     void BlueColorChange()
@@ -36,25 +45,45 @@ public class Stairs : MonoBehaviour
             if (other.gameObject.GetComponent<BluePlayer>())
             {
                 BlueColorChange();
-                gameObject.GetComponent<MeshRenderer>().enabled = true;
+                
+                if (gameObject.GetComponent<MeshRenderer>().enabled == false)
+                {
+                    gameObject.GetComponent<MeshRenderer>().enabled = true;
+                    BuildStairsSoundActivator();
+                }
             }
             
             else if (other.gameObject.GetComponent<RedPlayer>())
             {
                 RedColorChange();
-                gameObject.GetComponent<MeshRenderer>().enabled = true;
+                
+                if (gameObject.GetComponent<MeshRenderer>().enabled == false)
+                {
+                    gameObject.GetComponent<MeshRenderer>().enabled = true;
+                    BuildStairsSoundActivator();
+                }
             }
             
             else if (other.gameObject.GetComponent<GreenPlayer>())
             {
                 GreenColorChange();
-                gameObject.GetComponent<MeshRenderer>().enabled = true;
+                
+                if (gameObject.GetComponent<MeshRenderer>().enabled == false)
+                {
+                    gameObject.GetComponent<MeshRenderer>().enabled = true;
+                    BuildStairsSoundActivator();
+                }
             }
             
             else if (other.gameObject.GetComponent<YellowPlayer>())
             {
                 YellowColorChange();
-                gameObject.GetComponent<MeshRenderer>().enabled = true;
+                
+                if (gameObject.GetComponent<MeshRenderer>().enabled == false)
+                {
+                    gameObject.GetComponent<MeshRenderer>().enabled = true;
+                    BuildStairsSoundActivator();
+                }
             }
         }
     }

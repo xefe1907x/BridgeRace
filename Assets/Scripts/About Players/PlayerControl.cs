@@ -11,6 +11,14 @@ public class PlayerControl : MonoBehaviour
 
     public static Action collectBricks;
 
+    AudioSource audioSource;
+    public AudioClip collectBrickSound;
+
+    void Start()
+    {
+        audioSource = gameObject.GetComponent<AudioSource>();
+    }
+
     void Update()
     {
         PlayerMovementWithJoystick();
@@ -39,7 +47,14 @@ public class PlayerControl : MonoBehaviour
         if (other.gameObject.CompareTag("Blue"))
         {
             collectBricks.Invoke();
+            audioSource.time = 0.2f;
+            audioSource.PlayOneShot(collectBrickSound);
             other.gameObject.SetActive(false);
+        }
+
+        if (other.gameObject.CompareTag("Finish"))
+        {
+            // TODO: Next level UI çıksın, oyuncu hareketi dursun
         }
     }
 }
