@@ -20,20 +20,18 @@ public class CharactersNameController : MonoBehaviour
     {
         botNames.Shuffle();
         BotNameSelector();
-        NameController();
     }
 
 
 
     void BotNameSelector()
     {
-        
+        characterName1.text = PlayerPrefs.GetString("playerName");
+        characterName2.text = botNames[0];
+        characterName3.text = botNames[1];
+        characterName4.text = botNames[2];
     }
-
-    void NameController()
-    {
-        
-    }
+    
 }
 
 public static class ListShuffler
