@@ -14,8 +14,13 @@ public class PlayerControl : MonoBehaviour
     AudioSource audioSource;
     public AudioClip collectBrickSound;
 
+    public static PlayerControl Instance;
+
+    public bool playerFalse;
+
     void Start()
     {
+        Instance = this;
         audioSource = gameObject.GetComponent<AudioSource>();
     }
 
@@ -26,19 +31,22 @@ public class PlayerControl : MonoBehaviour
 
     void PlayerMovementWithJoystick()
     {
-        // For the move
-        _rigidbody.velocity = new Vector3(_joystick.Horizontal * _moveSpeed * Time.deltaTime, _rigidbody.velocity.y,
-            _joystick.Vertical * _moveSpeed * Time.deltaTime);
-        
-        // For the rotation
-        if (_joystick.Horizontal != 0 || _joystick.Horizontal != 0)
+        if (!playerFalse)
         {
-            transform.rotation = Quaternion.LookRotation(_rigidbody.velocity);
-            _animator.SetBool("isRunning", true);
-        }
-        else
-        {
-            _animator.SetBool("isRunning", false);
+            // For the move
+            _rigidbody.velocity = new Vector3(_joystick.Horizontal * _moveSpeed * Time.deltaTime, _rigidbody.velocity.y,
+                _joystick.Vertical * _moveSpeed * Time.deltaTime);
+
+            // For the rotation
+            if (_joystick.Horizontal != 0 || _joystick.Horizontal != 0)
+            {
+                transform.rotation = Quaternion.LookRotation(_rigidbody.velocity);
+                _animator.SetBool("isRunning", true);
+            }
+            else
+            {
+                _animator.SetBool("isRunning", false);
+            }
         }
     }
 

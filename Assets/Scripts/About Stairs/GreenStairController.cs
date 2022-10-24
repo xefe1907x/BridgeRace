@@ -16,12 +16,12 @@ public class GreenStairController : MonoBehaviour
         {
             if (collision.gameObject.GetComponent<GreenPlayer>())
             {
-                if (CollectedBricksController.greenPlayerBricks > 0)
+                if (CollectedBricksController.Instance.greenPlayerBricks > 0)
                 {
                     gameObject.transform.position = new Vector3(transform.position.x, transform.position.y,
                         transform.position.z + moveTreshHold);
                     
-                    CollectedBricksController.greenPlayerBricks -= 1;
+                    CollectedBricksController.Instance.greenPlayerBricks -= 1;
                 }
             }
             

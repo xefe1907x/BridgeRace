@@ -16,12 +16,12 @@ public class YellowStairController : MonoBehaviour
         {
             if (collision.gameObject.GetComponent<YellowPlayer>())
             {
-                if (CollectedBricksController.yellowPlayerBricks > 0)
+                if (CollectedBricksController.Instance.yellowPlayerBricks > 0)
                 {
                     gameObject.transform.position = new Vector3(transform.position.x, transform.position.y,
                         transform.position.z + moveTreshHold);
                     
-                    CollectedBricksController.yellowPlayerBricks -= 1;
+                    CollectedBricksController.Instance.yellowPlayerBricks -= 1;
                 }
             }
             

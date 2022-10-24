@@ -16,12 +16,12 @@ public class RedStairController : MonoBehaviour
         {
             if (collision.gameObject.GetComponent<RedPlayer>())
             {
-                if (CollectedBricksController.redPlayerBricks > 0)
+                if (CollectedBricksController.Instance.redPlayerBricks > 0)
                 {
                     gameObject.transform.position = new Vector3(transform.position.x, transform.position.y,
                         transform.position.z + moveTreshHold);
                     
-                    CollectedBricksController.redPlayerBricks -= 1;
+                    CollectedBricksController.Instance.redPlayerBricks -= 1;
                 }
             }
             

@@ -18,12 +18,12 @@ public class BlueStairController : MonoBehaviour
         {
             if (collision.gameObject.GetComponent<BluePlayer>())
             {
-                if (CollectedBricksController.bluePlayerBricks > 0)
+                if (CollectedBricksController.Instance.bluePlayerBricks > 0)
                 {
                     gameObject.transform.position = new Vector3(transform.position.x, transform.position.y,
                         transform.position.z + moveTreshHold);
                     
-                    CollectedBricksController.bluePlayerBricks -= 1;
+                    CollectedBricksController.Instance.bluePlayerBricks -= 1;
                 }
             }
             

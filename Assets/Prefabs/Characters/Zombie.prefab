@@ -470,6 +470,8 @@ GameObject:
   - component: {fileID: 7461493660770658693}
   - component: {fileID: 6347580799738815265}
   - component: {fileID: 7377761032298753521}
+  - component: {fileID: 555362232720341981}
+  - component: {fileID: 1754017021847843678}
   m_Layer: 0
   m_Name: Zombie
   m_TagString: Untagged
@@ -543,8 +545,33 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &555362232720341981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4566041901652915948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e8f1e9f0e68e7b4f8657eb8671a1ec7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  botAnimator: {fileID: 7461493660770658693}
+--- !u!114 &1754017021847843678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4566041901652915948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24b1c1d935b78944a85ced7c3a748330, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5320222526229206042
 GameObject:
   m_ObjectHideFlags: 0

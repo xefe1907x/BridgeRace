@@ -437,6 +437,8 @@ GameObject:
   - component: {fileID: 7812746770649838146}
   - component: {fileID: 2879816876901360025}
   - component: {fileID: 2729474168316636452}
+  - component: {fileID: 2369016864743407355}
+  - component: {fileID: 8906130198515817353}
   m_Layer: 0
   m_Name: Girl
   m_TagString: Untagged
@@ -510,8 +512,33 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &2369016864743407355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3800239642778512683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd07ad25be1566b4c8189cf2c199b1a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  botAnimator: {fileID: 7812746770649838146}
+--- !u!114 &8906130198515817353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3800239642778512683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24b1c1d935b78944a85ced7c3a748330, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3924197632093883031
 GameObject:
   m_ObjectHideFlags: 0
