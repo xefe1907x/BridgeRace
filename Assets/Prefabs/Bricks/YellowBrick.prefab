@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5702759412573073959}
   - component: {fileID: 2186534190294155857}
   - component: {fileID: 637351823798300909}
+  - component: {fileID: 1827269336357521279}
   m_Layer: 0
   m_Name: YellowBrick
   m_TagString: Yellow
@@ -97,3 +98,15 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1827269336357521279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4008349865870725665}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad6530a88d7f17143be5de0e3d95d45e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -44,7 +44,7 @@ public class PlayerControl : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Blue"))
+        if (other.gameObject.GetComponent<BlueBrick>())
         {
             collectBricks.Invoke();
             audioSource.time = 0.2f;

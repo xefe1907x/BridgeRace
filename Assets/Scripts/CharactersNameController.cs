@@ -22,14 +22,19 @@ public class CharactersNameController : MonoBehaviour
         BotNameSelector();
     }
 
-
-
     void BotNameSelector()
     {
         characterName1.text = PlayerPrefs.GetString("playerName");
         characterName2.text = botNames[0];
         characterName3.text = botNames[1];
         characterName4.text = botNames[2];
+        
+        if (botNames.Count > 3)
+        {
+            botNames.Remove(botNames[0]);
+            botNames.Remove(botNames[1]);
+            botNames.Remove(botNames[2]);
+        }
     }
     
 }

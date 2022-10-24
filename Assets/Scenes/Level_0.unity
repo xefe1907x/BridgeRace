@@ -953,7 +953,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2095366036}
         m_TargetAssemblyTypeName: ButtonSessions, Assembly-CSharp
-        m_MethodName: LoadNextLevel
+        m_MethodName: LoadCurrentLevel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
