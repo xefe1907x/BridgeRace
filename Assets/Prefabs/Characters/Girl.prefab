@@ -5392,6 +5392,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brickList: []
+  stair1Entrance: {fileID: 0}
+  stair2Entrance: {fileID: 0}
+  stair3Entrance: {fileID: 0}
 --- !u!195 &1957166066200843821
 NavMeshAgent:
   m_ObjectHideFlags: 0

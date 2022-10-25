@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 
@@ -5,7 +6,16 @@ public class BluePlayer : Player
 {
     public Animator playerAnimator;
 
+    AudioSource audioSource;
+    public AudioClip fallSound;
+
     int playerMoveTimer = 1;
+
+    void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
+
     IEnumerator PlayerMovementActivator()
     {
         yield return new WaitForSeconds(playerMoveTimer);
@@ -16,6 +26,8 @@ public class BluePlayer : Player
     {
         if (collision.gameObject.GetComponent<RedPlayer>())
         {
+            audioSource.PlayOneShot(fallSound);
+
             if (CollectedBricksController.Instance.redPlayerBricks >
                 CollectedBricksController.Instance.bluePlayerBricks)
             {
@@ -28,6 +40,8 @@ public class BluePlayer : Player
         
         if (collision.gameObject.GetComponent<GreenPlayer>())
         {
+            audioSource.PlayOneShot(fallSound);
+
             if (CollectedBricksController.Instance.greenPlayerBricks >
                 CollectedBricksController.Instance.bluePlayerBricks)
             {
@@ -40,6 +54,8 @@ public class BluePlayer : Player
         
         if (collision.gameObject.GetComponent<YellowPlayer>())
         {
+            audioSource.PlayOneShot(fallSound);
+
             if (CollectedBricksController.Instance.yellowPlayerBricks >
                 CollectedBricksController.Instance.bluePlayerBricks)
             {

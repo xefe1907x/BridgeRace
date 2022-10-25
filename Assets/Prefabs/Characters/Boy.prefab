@@ -1042,6 +1042,7 @@ MonoBehaviour:
   _animator: {fileID: 3634926710994038550}
   _moveSpeed: 800
   collectBrickSound: {fileID: 8300000, guid: 9c682004006a0d04dbfe5cd107b4d54d, type: 3}
+  playerFalse: 0
 --- !u!114 &3609188145231575971
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1054,6 +1055,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e135fbc3280087d4b83a8a1d531c5785, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerAnimator: {fileID: 3634926710994038550}
+  fallSound: {fileID: 8300000, guid: 1580b6ffbce01b94b934c2bf1aab2c25, type: 3}
 --- !u!82 &1058959250
 AudioSource:
   m_ObjectHideFlags: 0

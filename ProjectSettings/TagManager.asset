@@ -26,6 +26,7 @@ TagManager:
   - a
   - f
   - j
+  - StairEntrance
   layers:
   - Default
   - TransparentFX

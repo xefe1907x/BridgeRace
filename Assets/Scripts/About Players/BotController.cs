@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.AI;
+using Random = UnityEngine.Random;
 
 public class BotController : MonoBehaviour
 {
@@ -11,17 +12,24 @@ public class BotController : MonoBehaviour
     public List<Brick> brickList = new List<Brick>();
 
     float brickListTimer = 0.5f;
-
-    Transform target;
-    NavMeshAgent navMeshAgent;
-    
     float chaseRange = 15f;
     float distanceToTarget = Mathf.Infinity;
+    
+    Transform target;
+    [SerializeField] Transform stair1Entrance;
+    [SerializeField] Transform stair2Entrance;
+    [SerializeField] Transform stair3Entrance;
+
+    NavMeshAgent navMeshAgent;
+
+    int botChooseStairs;
 
     bool canBotMove = true;
+    bool botNeedToGoStairs;
 
     void Start()
     {
+        BotChooseStair();
         animator = GetComponent<Animator>();
         navMeshAgent = GetComponent<NavMeshAgent>();
         Invoke(nameof(AddBricksToList), brickListTimer);
@@ -32,6 +40,23 @@ public class BotController : MonoBehaviour
         FindTarget();
         DistanceCalculator();
         BotMovement();
+        TargetChangerAfterCollectBrick();
+    }
+
+    void TargetChangerAfterCollectBrick()
+    {
+        if (gameObject.GetComponent<RedPlayer>())
+        {
+            if (CollectedBricksController.Instance.redPlayerBricks == 2)
+            {
+                botNeedToGoStairs = true;
+            }
+        }
+    }
+
+    void BotChooseStair()
+    {
+        botChooseStairs = Random.Range(1, 4);
     }
 
     void FindTarget()
@@ -55,17 +80,41 @@ public class BotController : MonoBehaviour
     {
         if (canBotMove)
         {
-            if (target != null)
+            if (!botNeedToGoStairs)
             {
-                if (distanceToTarget <= chaseRange)
+                if (target != null)
                 {
-                    navMeshAgent.SetDestination(target.position);
-                    animator.SetBool("isRunning", true);
+                    if (distanceToTarget <= chaseRange)
+                    {
+                        navMeshAgent.SetDestination(target.position);
+                        animator.SetBool("isRunning", true);
+                    }
+                }
+                else
+                {
+                    animator.SetBool("isRunning", false);
                 }
             }
+
             else
             {
-                animator.SetBool("isRunning", false);
+                if (botChooseStairs == 1)
+                {
+                    target = stair1Entrance;
+                    navMeshAgent.SetDestination(target.position);
+                }
+                
+                else if (botChooseStairs == 2)
+                {
+                    target = stair2Entrance;
+                    navMeshAgent.SetDestination(target.position);
+                }
+
+                else
+                {
+                    target = stair3Entrance;
+                    navMeshAgent.SetDestination(target.position);
+                }
             }
         }
     }
@@ -112,7 +161,6 @@ public class BotController : MonoBehaviour
         {
             Gizmos.color = Color.yellow;
         }
-        
         Gizmos.DrawWireSphere(transform.position, chaseRange);
     }
 }
