@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -18,7 +19,7 @@ public class BotController : MonoBehaviour
     float distanceToTarget = Mathf.Infinity;
 
     bool canBotMove = true;
-    
+
     void Start()
     {
         animator = GetComponent<Animator>();
