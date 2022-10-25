@@ -5,8 +5,12 @@ using UnityEngine.SceneManagement;
 public class ButtonSessions : MonoBehaviour
 {
     int currentLevel;
+
+    AudioSource audioSource;
+    public AudioClip buttonClickSound;
     void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         CurrentLevelController();
     }
 
@@ -35,5 +39,10 @@ public class ButtonSessions : MonoBehaviour
         nextLevel = currentLevel + 1;
         PlayerPrefs.SetInt("currentLevel", nextLevel);
         SceneManager.LoadScene(nextLevel);
+    }
+
+    public void ClickButtonSound()
+    {
+        audioSource.PlayOneShot(buttonClickSound);
     }
 }

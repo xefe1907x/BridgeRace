@@ -59,7 +59,7 @@ public class PlayerControl : MonoBehaviour
             audioSource.PlayOneShot(collectBrickSound);
             other.gameObject.SetActive(false);
         }
-
+        
         if (other.gameObject.CompareTag("Finish"))
         {
             // TODO: Next level UI çıksın, oyuncu hareketi dursun
