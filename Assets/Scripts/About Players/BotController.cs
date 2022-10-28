@@ -1,6 +1,8 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Pathfinding;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AI;
 using Random = UnityEngine.Random;
@@ -12,42 +14,91 @@ public class BotController : MonoBehaviour
     public List<Brick> brickList = new List<Brick>();
 
     float brickListTimer = 0.5f;
-    float chaseRange = 15f;
+    float chaseRange = 35f;
     float distanceToTarget = Mathf.Infinity;
-    
-    Transform target;
-    [SerializeField] Transform stair1Entrance;
-    [SerializeField] Transform stair2Entrance;
-    [SerializeField] Transform stair3Entrance;
+    AIDestinationSetter _aiDestinationSetter;
+    Transform _target;
 
-    NavMeshAgent navMeshAgent;
+    bool isInBottom = true;
+    bool isInMiddle;
+    bool isInTop;
+    public Transform Target
+    {
+        get => _target;
+        set
+        {
+            _target = value;
+            _aiDestinationSetter.target = _target;
+        }
+    }
+
+    [SerializeField] Transform stair1End1;
+    [SerializeField] Transform stair1End2;
+    [SerializeField] Transform stair1End3;
+    [SerializeField] Transform stair2End1;
+    [SerializeField] Transform stair2End2;
+    [SerializeField] Transform stair3End;
 
     int botChooseStairs;
-
-    bool canBotMove = true;
+    int botChooseStairs2;
+    
     bool botNeedToGoStairs;
 
     void Start()
     {
         BotChooseStair();
         animator = GetComponent<Animator>();
-        navMeshAgent = GetComponent<NavMeshAgent>();
         Invoke(nameof(AddBricksToList), brickListTimer);
+        _aiDestinationSetter = GetComponent<AIDestinationSetter>();
+        _aiDestinationSetter.target = Target;
+        
+        if (gameObject.GetComponent<RedPlayer>())
+            RedStairController.redBricksAreZero += TargetToBricksAgain;
+        if (gameObject.GetComponent<YellowPlayer>())
+            YellowStairController.yellowBricksAreZero += TargetToBricksAgain;
+        if (gameObject.GetComponent<GreenPlayer>())
+            GreenStairController.greenBricksAreZero += TargetToBricksAgain;
+        
+        Invoke(nameof(FindTarget),0.5f);
+        animator.SetBool("isRunning", true);
     }
 
     void Update()
     {
-        FindTarget();
         DistanceCalculator();
-        BotMovement();
         TargetChangerAfterCollectBrick();
+        Debug.Log("Is in Bottom: " + isInBottom);
+        Debug.Log("Is in Middle: " + isInMiddle);
+        Debug.Log("Is in Top: " + isInTop);
+    }
+
+    void TargetToBricksAgain()
+    {
+        botNeedToGoStairs = false;
+        FindTarget();
     }
 
     void TargetChangerAfterCollectBrick()
     {
         if (gameObject.GetComponent<RedPlayer>())
         {
-            if (CollectedBricksController.Instance.redPlayerBricks == 2)
+            if (CollectedBricksController.Instance.redPlayerBricks == 8)
+            {
+                botNeedToGoStairs = true;
+            }
+        }
+        
+        if (gameObject.GetComponent<GreenPlayer>())
+        {
+            if (CollectedBricksController.Instance.greenPlayerBricks == 14)
+            {
+                botNeedToGoStairs = true;
+            }
+        }
+        
+        if (gameObject.GetComponent<YellowPlayer>())
+        {
+            if (CollectedBricksController.Instance.greenPlayerBricks == 10)
             {
                 botNeedToGoStairs = true;
             }
@@ -57,73 +108,73 @@ public class BotController : MonoBehaviour
     void BotChooseStair()
     {
         botChooseStairs = Random.Range(1, 4);
+        botChooseStairs2 = Random.Range(1, 3);
     }
 
     void FindTarget()
     {
-        float nearestDistance = 15f;
-        for (int i = 0; i < brickList.Count; i++)
+        if (!botNeedToGoStairs)
         {
-            if (brickList[i].gameObject.activeInHierarchy)
+            float nearestDistance = 1500f;
+            for (int i = 0; i < brickList.Count; i++)
             {
-                var brickDistance = Vector3.Distance(brickList[i].transform.position, transform.position);
-
-                if (brickDistance <= nearestDistance)
+                if (brickList[i].gameObject.activeInHierarchy)
                 {
-                    target = brickList[i].transform;
+                    var brickDistance = Vector3.Distance(brickList[i].transform.position, transform.position);
+
+                    if (brickDistance <= nearestDistance)
+                    {
+                        Target = brickList[i].transform;
+                    }
                 }
             }
         }
-    }
-    
-    void BotMovement()
-    {
-        if (canBotMove)
-        {
-            if (!botNeedToGoStairs)
-            {
-                if (target != null)
-                {
-                    if (distanceToTarget <= chaseRange)
-                    {
-                        navMeshAgent.SetDestination(target.position);
-                        animator.SetBool("isRunning", true);
-                    }
-                }
-                else
-                {
-                    animator.SetBool("isRunning", false);
-                }
-            }
 
-            else
+        else
+        {
+            if (isInBottom)
             {
                 if (botChooseStairs == 1)
                 {
-                    target = stair1Entrance;
-                    navMeshAgent.SetDestination(target.position);
+                    Target = stair1End1;
                 }
-                
+
                 else if (botChooseStairs == 2)
                 {
-                    target = stair2Entrance;
-                    navMeshAgent.SetDestination(target.position);
+                    Target = stair1End2;
                 }
 
                 else
                 {
-                    target = stair3Entrance;
-                    navMeshAgent.SetDestination(target.position);
+                    Target = stair1End3;
                 }
+            }
+                
+            else if (isInMiddle)
+            {
+                if (botChooseStairs2 == 1)
+                {
+                    Target = stair2End1;
+                }
+                    
+                else
+                {
+                    Target = stair2End2;
+                }
+            }
+                
+            else if (isInTop)
+            {
+                Target = stair3End;
             }
         }
     }
 
     void DistanceCalculator()
     {
-        if (target != null)
+        if (Target != null)
         {
-            distanceToTarget = Vector3.Distance(target.position, transform.position);
+            distanceToTarget = Vector3.Distance(_target.position, transform.position);
         }
     }
 
@@ -162,5 +213,37 @@ public class BotController : MonoBehaviour
             Gizmos.color = Color.yellow;
         }
         Gizmos.DrawWireSphere(transform.position, chaseRange);
+    }
+
+    void OnDisable()
+    {
+        if (gameObject.GetComponent<RedPlayer>())
+            RedStairController.redBricksAreZero -= TargetToBricksAgain;
+        if (gameObject.GetComponent<YellowPlayer>())
+            YellowStairController.yellowBricksAreZero -= TargetToBricksAgain;
+        if (gameObject.GetComponent<GreenPlayer>())
+            GreenStairController.greenBricksAreZero -= TargetToBricksAgain;
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.GetComponent<Brick>())
+        {
+            FindTarget();
+        }
+        
+        if (other.CompareTag("MiddleGate"))
+        {
+            isInBottom = false;
+            isInMiddle = true;
+            FindTarget();
+        }
+
+        if (other.CompareTag("EndGate"))
+        {
+            isInMiddle = false;
+            isInTop = true;
+            FindTarget();
+        }
     }
 }

@@ -15,6 +15,13 @@ public class GateDoorOpener : MonoBehaviour
     {
         audioSource = gameObject.GetComponent<AudioSource>();
         DOTween.Init();
+        StartCoroutine(nameof(GatesMeshesOpener));
+    }
+
+    IEnumerator GatesMeshesOpener()
+    {
+        yield return new WaitForSeconds(0.1f);
+        GetComponent<MeshRenderer>().enabled = true;
     }
 
     IEnumerator OpenedDoorDestroyer()

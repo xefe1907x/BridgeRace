@@ -1,5 +1,6 @@
 using UnityEngine;
 
+[DefaultExecutionOrder(-100)]
 public class BrickSlotController : MonoBehaviour
 {
     public GameObject greenBrick;
@@ -7,51 +8,44 @@ public class BrickSlotController : MonoBehaviour
     public GameObject redBrick;
     public GameObject yellowBrick;
 
-    bool isEmpty = true;
-
     int brickNumber; // 1 = Green,  2 = Blue,  3 = Red,  4 = Yellow
 
-    void Start()
+    void Awake()
     {
         RandomNumberCreator();
-    }
-
-    void Update()
-    {
         BrickInstantiator();
     }
-
+    
     void RandomNumberCreator()
     {
-        brickNumber = UnityEngine.Random.Range(1, 5);
+        brickNumber = Random.Range(1, 5);
     }
 
     void BrickInstantiator()
     {
-        if (isEmpty)
+        GameObject brick = null;
+
+        switch (brickNumber)
         {
-            switch (brickNumber)
-            {
-                case 1:
-                    Instantiate(greenBrick, transform);
-                    isEmpty = false;
-                    break;
-                
-                case 2:
-                    Instantiate(blueBrick, transform);
-                    isEmpty = false;
-                    break;
-                
-                case 3:
-                    Instantiate(redBrick, transform);
-                    isEmpty = false;
-                    break;
-                
-                case 4:
-                    Instantiate(yellowBrick, transform);
-                    isEmpty = false;
-                    break;
-            }
+            case 1:
+                brick = Instantiate(greenBrick, transform);
+                brick.SetActive(false);
+                break;
+
+            case 2:
+                brick = Instantiate(blueBrick, transform);
+                brick.SetActive(false);
+                break;
+
+            case 3:
+                brick = Instantiate(redBrick, transform);
+                brick.SetActive(false);
+                break;
+
+            case 4:
+                brick = Instantiate(yellowBrick, transform);
+                brick.SetActive(false);
+                break;
         }
     }
 }

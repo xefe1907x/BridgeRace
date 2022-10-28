@@ -1,28 +1,22 @@
 using UnityEngine;
 
+[DefaultExecutionOrder(100)]
 public class BricksController : MonoBehaviour
 {
-    private int rebornTimer = 7;
-    private float _counter;
-    void Update()
-    {
-        BricksActivatorWithDelay();
-    }
+    Brick _brick;
 
+    void Start()
+    {
+        _brick = GetComponentInChildren<Brick>(true);
+        InvokeRepeating(nameof(BricksActivatorWithDelay),7,7);
+    }
+    
     void BricksActivatorWithDelay()
     {
-        if (gameObject.transform.childCount > 0)
+        if (_brick.isTaken)
         {
-            if (!gameObject.transform.GetChild(0).gameObject.activeInHierarchy)
-            {
-                _counter += Time.deltaTime;
-
-                if (_counter >= rebornTimer)
-                {
-                    gameObject.transform.GetChild(0).gameObject.SetActive(true);
-                    _counter = 0;
-                }
-            }
+            _brick.gameObject.SetActive(true);
+            _brick.isTaken = false;
         }
     }
 }

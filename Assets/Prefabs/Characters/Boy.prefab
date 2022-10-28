@@ -1055,6 +1055,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e135fbc3280087d4b83a8a1d531c5785, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameParts:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   playerAnimator: {fileID: 3634926710994038550}
   fallSound: {fileID: 8300000, guid: 1580b6ffbce01b94b934c2bf1aab2c25, type: 3}
 --- !u!82 &1058959250

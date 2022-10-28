@@ -1377,8 +1377,9 @@ GameObject:
   m_Component:
   - component: {fileID: 301983222}
   - component: {fileID: 301983223}
+  - component: {fileID: 301983224}
   m_Layer: 0
-  m_Name: SettingsMenu
+  m_Name: UIController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1413,6 +1414,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioMixer: {fileID: 24100000, guid: ed49a0298ed69e54caa1dfd0459b9683, type: 2}
   slider: {fileID: 265550089}
+--- !u!114 &301983224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 301983221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: badfc9e9e85a1574699bb58366fe8caf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  walletText: {fileID: 986780322}
+  wallet: 0
 --- !u!1 &326224644
 GameObject:
   m_ObjectHideFlags: 0
@@ -8300,3 +8315,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textBox: {fileID: 1470830757}
+  episodeText: {fileID: 2061105559}

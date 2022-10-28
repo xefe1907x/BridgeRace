@@ -54,6 +54,8 @@ public class PlayerControl : MonoBehaviour
     {
         if (other.gameObject.GetComponent<BlueBrick>())
         {
+            var brick = other.gameObject.GetComponent<BlueBrick>();
+            brick.isTaken = true;
             collectBricks.Invoke();
             audioSource.time = 0.2f;
             audioSource.PlayOneShot(collectBrickSound);
