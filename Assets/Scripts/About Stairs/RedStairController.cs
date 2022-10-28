@@ -13,11 +13,12 @@ public class RedStairController : MonoBehaviour
     {
         firstPosition = gameObject.transform.position;
     }
-    void OnCollisionEnter(Collision collision)
+
+    void OnTriggerEnter(Collider other)
     {
-        if (collision.gameObject.GetComponent<Player>())
+        if (other.gameObject.GetComponent<Player>())
         {
-            if (collision.gameObject.GetComponent<RedPlayer>())
+            if (other.gameObject.GetComponent<RedPlayer>())
             {
                 if (CollectedBricksController.Instance.redPlayerBricks > 0)
                 {
@@ -33,17 +34,17 @@ public class RedStairController : MonoBehaviour
                 }
             }
             
-            else if (collision.gameObject.GetComponent<BluePlayer>())
+            else if (other.gameObject.GetComponent<BluePlayer>())
             {
                 gameObject.GetComponent<BoxCollider>().isTrigger = true;
             }
             
-            else if (collision.gameObject.GetComponent<YellowPlayer>())
+            else if (other.gameObject.GetComponent<YellowPlayer>())
             {
                 gameObject.GetComponent<BoxCollider>().isTrigger = true;
             }
             
-            else if (collision.gameObject.GetComponent<GreenPlayer>())
+            else if (other.gameObject.GetComponent<GreenPlayer>())
             {
                 gameObject.GetComponent<BoxCollider>().isTrigger = true;
             }
@@ -52,7 +53,7 @@ public class RedStairController : MonoBehaviour
 
     void OnTriggerExit(Collider other)
     {
-        gameObject.GetComponent<BoxCollider>().isTrigger = false;
-        transform.position = firstPosition;
+        // gameObject.GetComponent<BoxCollider>().isTrigger = false;
+        // transform.position = firstPosition;
     }
 }

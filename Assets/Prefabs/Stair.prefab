@@ -11,12 +11,13 @@ GameObject:
   - component: {fileID: 2992599601655177385}
   - component: {fileID: 6397848367918854033}
   - component: {fileID: 1713323859171535873}
+  - component: {fileID: 6136313581397169548}
   m_Layer: 0
   m_Name: StairController (Green)
   m_TagString: StairController
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2992599601655177385
 Transform:
@@ -41,7 +42,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1001159182927647016}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -58,6 +59,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23910cabe44831345bd004d973063e81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!54 &6136313581397169548
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1001159182927647016}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1648527645834823101
 GameObject:
   m_ObjectHideFlags: 0
@@ -239,7 +256,7 @@ GameObject:
   m_TagString: StairController
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &8541874904147082328
 Transform:
@@ -6869,7 +6886,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 632ae7eb1d4ce49d38a1e38ee7efe7c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  guid: cf89d5729ab4df15-2618c2e176b1fd8b
+  guid: 0ef987b3d569fca7-01d05c2aa0bff1da
 --- !u!1 &6122674294756780646
 GameObject:
   m_ObjectHideFlags: 0
@@ -8426,12 +8443,13 @@ GameObject:
   - component: {fileID: 6265735556219202160}
   - component: {fileID: 716791780915908210}
   - component: {fileID: 4828856987732758690}
+  - component: {fileID: 706179804}
   m_Layer: 0
   m_Name: StairController (Red)
   m_TagString: StairController
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &6265735556219202160
 Transform:
@@ -8456,7 +8474,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8164913208017353787}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -8473,6 +8491,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30a738a15354fa546a26c583f3a65aeb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!54 &706179804
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8164913208017353787}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &9082564603137169685
 GameObject:
   m_ObjectHideFlags: 0
@@ -8484,12 +8518,13 @@ GameObject:
   - component: {fileID: 3708266444804650020}
   - component: {fileID: 1133826784993265191}
   - component: {fileID: 2660467477365298302}
+  - component: {fileID: 4603530886245506020}
   m_Layer: 0
   m_Name: StairController (Yellow)
   m_TagString: StairController
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &3708266444804650020
 Transform:
@@ -8514,7 +8549,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9082564603137169685}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -8531,3 +8566,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e33ed155c5274e458d5e83dac45506c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!54 &4603530886245506020
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9082564603137169685}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
