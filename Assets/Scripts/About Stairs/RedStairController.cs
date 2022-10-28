@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class RedStairController : MonoBehaviour
@@ -5,6 +6,8 @@ public class RedStairController : MonoBehaviour
     float moveTreshHold = 0.63f;
     
     Vector3 firstPosition;
+
+    public static Action redBricksAreZero;
 
     void Start()
     {
@@ -22,6 +25,11 @@ public class RedStairController : MonoBehaviour
                         transform.position.z + moveTreshHold);
                     
                     CollectedBricksController.Instance.redPlayerBricks -= 1;
+
+                    if (CollectedBricksController.Instance.redPlayerBricks == 0)
+                    {
+                        redBricksAreZero.Invoke();
+                    }
                 }
             }
             

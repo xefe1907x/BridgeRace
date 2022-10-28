@@ -67,7 +67,7 @@ namespace Pathfinding.Examples {
 			relVelocity.y = 0;
 
 			// Speed relative to the character size
-			anim.SetFloat("NormalizedSpeed", relVelocity.magnitude / anim.transform.lossyScale.x);
+			anim.SetBool("isRunning", true);
 		}
 	}
 }

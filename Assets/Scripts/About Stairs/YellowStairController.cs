@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class YellowStairController : MonoBehaviour
@@ -5,6 +6,8 @@ public class YellowStairController : MonoBehaviour
     float moveTreshHold = 0.63f;
     
     Vector3 firstPosition;
+    
+    public static Action yellowBricksAreZero;
 
     void Start()
     {
@@ -22,6 +25,11 @@ public class YellowStairController : MonoBehaviour
                         transform.position.z + moveTreshHold);
                     
                     CollectedBricksController.Instance.yellowPlayerBricks -= 1;
+                    
+                    if (CollectedBricksController.Instance.yellowPlayerBricks == 0)
+                    {
+                        yellowBricksAreZero.Invoke();
+                    }
                 }
             }
             

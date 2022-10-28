@@ -29,6 +29,8 @@ TagManager:
   - StairEntrance
   - b
   - StairEnd
+  - MiddleGate
+  - EndGate
   layers:
   - Default
   - TransparentFX
