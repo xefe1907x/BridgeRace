@@ -4,15 +4,8 @@ using UnityEngine;
 public class RedStairController : MonoBehaviour
 {
     float moveTreshHold = 0.63f;
-    
-    Vector3 firstPosition;
 
     public static Action redBricksAreZero;
-
-    void Start()
-    {
-        firstPosition = gameObject.transform.position;
-    }
 
     void OnTriggerEnter(Collider other)
     {
@@ -49,11 +42,5 @@ public class RedStairController : MonoBehaviour
                 gameObject.GetComponent<BoxCollider>().isTrigger = true;
             }
         }
-    }
-
-    void OnTriggerExit(Collider other)
-    {
-        // gameObject.GetComponent<BoxCollider>().isTrigger = false;
-        // transform.position = firstPosition;
     }
 }
