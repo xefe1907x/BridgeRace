@@ -4,20 +4,14 @@ using UnityEngine;
 public class GreenStairController : MonoBehaviour
 {
     float moveTreshHold = 0.63f;
-    
-    Vector3 firstPosition;
-    
-    public static Action greenBricksAreZero;
 
-    void Start()
+    public static Action greenBricksAreZero;
+    
+    void OnTriggerEnter(Collider other)
     {
-        firstPosition = gameObject.transform.position;
-    }
-    void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.GetComponent<Player>())
+        if (other.gameObject.GetComponent<Player>())
         {
-            if (collision.gameObject.GetComponent<GreenPlayer>())
+            if (other.gameObject.GetComponent<GreenPlayer>())
             {
                 if (CollectedBricksController.Instance.greenPlayerBricks > 0)
                 {
@@ -33,26 +27,20 @@ public class GreenStairController : MonoBehaviour
                 }
             }
             
-            else if (collision.gameObject.GetComponent<RedPlayer>())
+            else if (other.gameObject.GetComponent<RedPlayer>())
             {
                 gameObject.GetComponent<BoxCollider>().isTrigger = true;
             }
             
-            else if (collision.gameObject.GetComponent<BluePlayer>())
+            else if (other.gameObject.GetComponent<BluePlayer>())
             {
                 gameObject.GetComponent<BoxCollider>().isTrigger = true;
             }
             
-            else if (collision.gameObject.GetComponent<YellowPlayer>())
+            else if (other.gameObject.GetComponent<YellowPlayer>())
             {
                 gameObject.GetComponent<BoxCollider>().isTrigger = true;
             }
         }
-    }
-
-    void OnTriggerExit(Collider other)
-    {
-        gameObject.GetComponent<BoxCollider>().isTrigger = false;
-        transform.position = firstPosition;
     }
 }

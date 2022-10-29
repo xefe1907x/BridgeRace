@@ -22,6 +22,10 @@ public class BotController : MonoBehaviour
     bool isInBottom = true;
     bool isInMiddle;
     bool isInTop;
+
+    public GameObject bottom;
+    public GameObject middle;
+    public GameObject top;
     public Transform Target
     {
         get => _target;
@@ -67,9 +71,6 @@ public class BotController : MonoBehaviour
     {
         DistanceCalculator();
         TargetChangerAfterCollectBrick();
-        Debug.Log("Is in Bottom: " + isInBottom);
-        Debug.Log("Is in Middle: " + isInMiddle);
-        Debug.Log("Is in Top: " + isInTop);
     }
 
     void TargetToBricksAgain()
@@ -82,7 +83,7 @@ public class BotController : MonoBehaviour
     {
         if (gameObject.GetComponent<RedPlayer>())
         {
-            if (CollectedBricksController.Instance.redPlayerBricks == 8)
+            if (CollectedBricksController.Instance.redPlayerBricks == 9)
             {
                 botNeedToGoStairs = true;
             }
@@ -90,7 +91,7 @@ public class BotController : MonoBehaviour
         
         if (gameObject.GetComponent<GreenPlayer>())
         {
-            if (CollectedBricksController.Instance.greenPlayerBricks == 14)
+            if (CollectedBricksController.Instance.greenPlayerBricks == 10)
             {
                 botNeedToGoStairs = true;
             }
@@ -98,7 +99,7 @@ public class BotController : MonoBehaviour
         
         if (gameObject.GetComponent<YellowPlayer>())
         {
-            if (CollectedBricksController.Instance.greenPlayerBricks == 10)
+            if (CollectedBricksController.Instance.greenPlayerBricks == 11)
             {
                 botNeedToGoStairs = true;
             }
@@ -178,21 +179,66 @@ public class BotController : MonoBehaviour
         }
     }
 
-    void AddBricksToList()
+    public void AddBricksToList()
     {
         if (gameObject.GetComponent<RedPlayer>())
         {
-            brickList = FindObjectsOfType<RedBrick>().Cast<Brick>().ToList();
+            brickList.Clear();
+            if (isInBottom)
+            {
+                var bricks = bottom.GetComponentsInChildren<RedBrick>().ToList();
+                brickList = bricks.Cast<Brick>().ToList();
+            }
+            else if (isInMiddle)
+            {
+                var bricks = middle.GetComponentsInChildren<RedBrick>().ToList();
+                brickList = bricks.Cast<Brick>().ToList();
+            }
+            else
+            {
+                var bricks = top.GetComponentsInChildren<RedBrick>().ToList();
+                brickList = bricks.Cast<Brick>().ToList();
+            }
         }
         
         else if (gameObject.GetComponent<YellowPlayer>())
         {
-            brickList = FindObjectsOfType<YellowBrick>().Cast<Brick>().ToList();
+            brickList.Clear();
+            if (isInBottom)
+            {
+                var bricks = bottom.GetComponentsInChildren<YellowBrick>().ToList();
+                brickList = bricks.Cast<Brick>().ToList();
+            }
+            else if (isInMiddle)
+            {
+                var bricks = middle.GetComponentsInChildren<YellowBrick>().ToList();
+                brickList = bricks.Cast<Brick>().ToList();
+            }
+            else
+            {
+                var bricks = top.GetComponentsInChildren<YellowBrick>().ToList();
+                brickList = bricks.Cast<Brick>().ToList();
+            }
         }
         
         else if (gameObject.GetComponent<GreenPlayer>())
         {
-            brickList = FindObjectsOfType<GreenBrick>().Cast<Brick>().ToList();
+            brickList.Clear();
+            if (isInBottom)
+            {
+                var bricks = bottom.GetComponentsInChildren<GreenBrick>().ToList();
+                brickList = bricks.Cast<Brick>().ToList();
+            }
+            else if (isInMiddle)
+            {
+                var bricks = middle.GetComponentsInChildren<GreenBrick>().ToList();
+                brickList = bricks.Cast<Brick>().ToList();
+            }
+            else
+            {
+                var bricks = top.GetComponentsInChildren<GreenBrick>().ToList();
+                brickList = bricks.Cast<Brick>().ToList();
+            }
         }
     }
 
@@ -236,13 +282,16 @@ public class BotController : MonoBehaviour
         {
             isInBottom = false;
             isInMiddle = true;
+            AddBricksToList();
             FindTarget();
         }
 
+        
         if (other.CompareTag("EndGate"))
         {
             isInMiddle = false;
             isInTop = true;
+            AddBricksToList();
             FindTarget();
         }
     }

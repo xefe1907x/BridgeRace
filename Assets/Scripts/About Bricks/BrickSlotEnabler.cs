@@ -11,6 +11,7 @@ public class BrickSlotEnabler : MonoBehaviour
             var bricks = GetComponentsInChildren<RedBrick>(true);
             foreach (var brick in bricks)
                 brick.gameObject.SetActive(true);
+            
         }
         if (other.GetComponent<GreenPlayer>())
         {
