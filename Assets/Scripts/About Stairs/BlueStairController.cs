@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class BlueStairController : MonoBehaviour
 {
-    float moveTreshHold = 0.63f;
+    [SerializeField] float moveTreshHold = 0.63f;
 
     Vector3 firstPosition;
 
@@ -45,7 +45,10 @@ public class BlueStairController : MonoBehaviour
 
     void OnTriggerExit(Collider other)
     {
-        gameObject.GetComponent<BoxCollider>().isTrigger = false;
-        transform.position = firstPosition;
+        if (other.GetComponent<Player>())
+        {
+            gameObject.GetComponent<BoxCollider>().isTrigger = false;
+            transform.position = firstPosition;
+        }
     }
 }

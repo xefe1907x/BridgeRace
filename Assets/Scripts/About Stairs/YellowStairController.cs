@@ -27,20 +27,20 @@ public class YellowStairController : MonoBehaviour
                 }
             }
             
-            else if (other.gameObject.GetComponent<RedPlayer>())
-            {
-                gameObject.GetComponent<BoxCollider>().isTrigger = true;
-            }
-            
-            else if (other.gameObject.GetComponent<BluePlayer>())
-            {
-                gameObject.GetComponent<BoxCollider>().isTrigger = true;
-            }
-            
-            else if (other.gameObject.GetComponent<GreenPlayer>())
-            {
-                gameObject.GetComponent<BoxCollider>().isTrigger = true;
-            }
+            // else if (other.gameObject.GetComponent<RedPlayer>())
+            // {
+            //     gameObject.GetComponent<BoxCollider>().isTrigger = true;
+            // }
+            //
+            // else if (other.gameObject.GetComponent<BluePlayer>())
+            // {
+            //     gameObject.GetComponent<BoxCollider>().isTrigger = true;
+            // }
+            //
+            // else if (other.gameObject.GetComponent<GreenPlayer>())
+            // {
+            //     gameObject.GetComponent<BoxCollider>().isTrigger = true;
+            // }
         }
     }
 }

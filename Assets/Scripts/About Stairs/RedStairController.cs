@@ -26,21 +26,6 @@ public class RedStairController : MonoBehaviour
                     }
                 }
             }
-            
-            else if (other.gameObject.GetComponent<BluePlayer>())
-            {
-                gameObject.GetComponent<BoxCollider>().isTrigger = true;
-            }
-            
-            else if (other.gameObject.GetComponent<YellowPlayer>())
-            {
-                gameObject.GetComponent<BoxCollider>().isTrigger = true;
-            }
-            
-            else if (other.gameObject.GetComponent<GreenPlayer>())
-            {
-                gameObject.GetComponent<BoxCollider>().isTrigger = true;
-            }
         }
     }
 }

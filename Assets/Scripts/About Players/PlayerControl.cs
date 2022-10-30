@@ -64,7 +64,7 @@ public class PlayerControl : MonoBehaviour
         
         if (other.gameObject.CompareTag("Finish"))
         {
-            // TODO: Next level UI çıksın, oyuncu hareketi dursun
+            Debug.Log("Calisiyo");
         }
     }
 }

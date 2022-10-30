@@ -1,10 +1,7 @@
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using Pathfinding;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.AI;
 using Random = UnityEngine.Random;
 
 public class BotController : MonoBehaviour
@@ -29,6 +26,7 @@ public class BotController : MonoBehaviour
     public Transform Target
     {
         get => _target;
+        
         set
         {
             _target = value;
@@ -293,6 +291,11 @@ public class BotController : MonoBehaviour
             isInTop = true;
             AddBricksToList();
             FindTarget();
+        }
+        
+        if (other.CompareTag("Finish"))
+        {
+            Debug.Log("Bot kazandi");
         }
     }
 }
