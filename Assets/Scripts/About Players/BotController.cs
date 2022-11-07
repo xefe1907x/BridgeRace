@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using Pathfinding;
@@ -12,9 +13,10 @@ public class BotController : MonoBehaviour
 
     float brickListTimer = 0.5f;
     float chaseRange = 35f;
-    float distanceToTarget = Mathf.Infinity;
     AIDestinationSetter _aiDestinationSetter;
     Transform _target;
+
+    public static Action loseGame;
 
     bool isInBottom = true;
     bool isInMiddle;
@@ -67,7 +69,6 @@ public class BotController : MonoBehaviour
 
     void Update()
     {
-        DistanceCalculator();
         TargetChangerAfterCollectBrick();
     }
 
@@ -168,15 +169,7 @@ public class BotController : MonoBehaviour
             }
         }
     }
-
-    void DistanceCalculator()
-    {
-        if (Target != null)
-        {
-            distanceToTarget = Vector3.Distance(_target.position, transform.position);
-        }
-    }
-
+    
     public void AddBricksToList()
     {
         if (gameObject.GetComponent<RedPlayer>())
@@ -295,7 +288,7 @@ public class BotController : MonoBehaviour
         
         if (other.CompareTag("Finish"))
         {
-            Debug.Log("Bot kazandi");
+            loseGame?.Invoke();
         }
     }
 }

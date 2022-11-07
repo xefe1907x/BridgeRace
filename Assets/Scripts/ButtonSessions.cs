@@ -29,7 +29,7 @@ public class ButtonSessions : MonoBehaviour
 
     public void LoadCurrentLevel()
     {
-        SceneManager.LoadScene(currentLevel);
+        SceneManager.LoadScene(1); // TODO: when you upload new levels => SceneManager.LoadScene(currentLevel);
     }
     public void LoadNextLevel()
     {
@@ -38,7 +38,8 @@ public class ButtonSessions : MonoBehaviour
         currentLevel = SceneManager.GetActiveScene().buildIndex;
         nextLevel = currentLevel + 1;
         PlayerPrefs.SetInt("currentLevel", nextLevel);
-        SceneManager.LoadScene(nextLevel);
+        
+        SceneManager.LoadScene(1); //TODO: when you upload new levels => SceneManager.LoadScene(nextLevel);
     }
 
     public void ClickButtonSound()

@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class CollectedBricksController : MonoBehaviour
@@ -12,11 +13,23 @@ public class CollectedBricksController : MonoBehaviour
     public int greenPlayerBricks = 0;
     public int yellowPlayerBricks = 0;
 
+    #region Singleton
+    
     public static CollectedBricksController Instance;
+
+    void Awake()
+    {
+        if (Instance != null)
+            Destroy(Instance);
+
+        Instance = this;
+    }
+    
+    #endregion
+
     void Start()
     {
-        Instance = this;
-        PlayerControl.collectBricks += IncreaseCollectedBlueBricks;
+        PlayerControl.Instance.collectBricks += IncreaseCollectedBlueBricks;
         RedBrick.redBrickCollect += IncreaseCollectedRedBricks;
         GreenBrick.greenBrickCollect += IncreaseCollectedGreenBricks;
         YellowBrick.yellowBrickCollect += IncreaseCollectedYellowBricks;
@@ -182,9 +195,9 @@ public class CollectedBricksController : MonoBehaviour
 
     void OnDisable()
     {
-        PlayerControl.collectBricks -= IncreaseCollectedBlueBricks;
-        RedBrick.redBrickCollect += IncreaseCollectedRedBricks;
-        GreenBrick.greenBrickCollect += IncreaseCollectedGreenBricks;
-        YellowBrick.yellowBrickCollect += IncreaseCollectedYellowBricks;
+        PlayerControl.Instance.collectBricks -= IncreaseCollectedBlueBricks;
+        RedBrick.redBrickCollect -= IncreaseCollectedRedBricks;
+        GreenBrick.greenBrickCollect -= IncreaseCollectedGreenBricks;
+        YellowBrick.yellowBrickCollect -= IncreaseCollectedYellowBricks;
     }
 }

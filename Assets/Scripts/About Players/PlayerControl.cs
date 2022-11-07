@@ -9,22 +9,33 @@ public class PlayerControl : MonoBehaviour
 
     [SerializeField] float _moveSpeed;
 
-    public static Action collectBricks;
+    public event Action collectBricks;
+    public event Action winGame;
 
     AudioSource audioSource;
     public AudioClip collectBrickSound;
-
-    public static PlayerControl Instance;
-
+    
     public bool playerFalse;
 
+    #region Singleton
+
+    public static PlayerControl Instance;
+    void Awake()
+    {
+        if (Instance != null)
+            Destroy(Instance);
+        
+        Instance = this;
+    }
+
+    #endregion
+    
     void Start()
     {
-        Instance = this;
         audioSource = gameObject.GetComponent<AudioSource>();
     }
 
-    void Update()
+    void FixedUpdate()
     {
         PlayerMovementWithJoystick();
     }
@@ -64,7 +75,8 @@ public class PlayerControl : MonoBehaviour
         
         if (other.gameObject.CompareTag("Finish"))
         {
-            Debug.Log("Calisiyo");
+            _moveSpeed = 0;
+            winGame?.Invoke();
         }
     }
 }
