@@ -1,8 +1,8 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Pathfinding;
 using UnityEngine;
+using UnityEngine.AI;
 using Random = UnityEngine.Random;
 
 public class BotController : MonoBehaviour
@@ -13,7 +13,6 @@ public class BotController : MonoBehaviour
 
     float brickListTimer = 0.5f;
     float chaseRange = 35f;
-    AIDestinationSetter _aiDestinationSetter;
     Transform _target;
 
     public static Action loseGame;
@@ -25,16 +24,7 @@ public class BotController : MonoBehaviour
     public GameObject bottom;
     public GameObject middle;
     public GameObject top;
-    public Transform Target
-    {
-        get => _target;
-        
-        set
-        {
-            _target = value;
-            _aiDestinationSetter.target = _target;
-        }
-    }
+    NavMeshAgent agent;
 
     [SerializeField] Transform stair1End1;
     [SerializeField] Transform stair1End2;
@@ -53,8 +43,7 @@ public class BotController : MonoBehaviour
         BotChooseStair();
         animator = GetComponent<Animator>();
         Invoke(nameof(AddBricksToList), brickListTimer);
-        _aiDestinationSetter = GetComponent<AIDestinationSetter>();
-        _aiDestinationSetter.target = Target;
+        agent = GetComponent<NavMeshAgent>();
         
         if (gameObject.GetComponent<RedPlayer>())
             RedStairController.redBricksAreZero += TargetToBricksAgain;
@@ -62,14 +51,20 @@ public class BotController : MonoBehaviour
             YellowStairController.yellowBricksAreZero += TargetToBricksAgain;
         if (gameObject.GetComponent<GreenPlayer>())
             GreenStairController.greenBricksAreZero += TargetToBricksAgain;
-        
-        Invoke(nameof(FindTarget),0.5f);
+        InvokeRepeating("SetDestination", 0.1f, 0.1f);
+        Invoke("FindTarget", 0.5f);
         animator.SetBool("isRunning", true);
     }
 
     void Update()
     {
         TargetChangerAfterCollectBrick();
+    }
+
+    void SetDestination()
+    {
+        if (_target != null)
+            agent.SetDestination(_target.position);
     }
 
     void TargetToBricksAgain()
@@ -124,7 +119,7 @@ public class BotController : MonoBehaviour
 
                     if (brickDistance <= nearestDistance)
                     {
-                        Target = brickList[i].transform;
+                        _target = brickList[i].transform;
                     }
                 }
             }
@@ -136,17 +131,17 @@ public class BotController : MonoBehaviour
             {
                 if (botChooseStairs == 1)
                 {
-                    Target = stair1End1;
+                    _target = stair1End1;
                 }
 
                 else if (botChooseStairs == 2)
                 {
-                    Target = stair1End2;
+                    _target = stair1End2;
                 }
 
                 else
                 {
-                    Target = stair1End3;
+                    _target = stair1End3;
                 }
             }
                 
@@ -154,18 +149,18 @@ public class BotController : MonoBehaviour
             {
                 if (botChooseStairs2 == 1)
                 {
-                    Target = stair2End1;
+                    _target = stair2End1;
                 }
                     
                 else
                 {
-                    Target = stair2End2;
+                    _target = stair2End2;
                 }
             }
                 
             else if (isInTop)
             {
-                Target = stair3End;
+                _target = stair3End;
             }
         }
     }
@@ -264,9 +259,25 @@ public class BotController : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.GetComponent<Brick>())
+        if (gameObject.GetComponent<RedPlayer>())
         {
-            FindTarget();
+            if (other.gameObject.GetComponent<RedBrick>())
+            {
+                Invoke("FindTarget", 0.1f);
+            }
+            
+        }
+        
+        if (gameObject.GetComponent<YellowPlayer>())
+        {
+            if (other.gameObject.GetComponent<YellowBrick>())
+                FindTarget();
+        }
+        
+        if (gameObject.GetComponent<GreenPlayer>())
+        {
+            if (other.gameObject.GetComponent<GreenBrick>())
+                FindTarget();
         }
         
         if (other.CompareTag("MiddleGate"))

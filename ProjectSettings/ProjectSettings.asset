@@ -756,6 +756,7 @@ PlayerSettings:
   ps4videoRecordingFeaturesUsed: 0
   ps4contentSearchFeaturesUsed: 0
   ps4CompatibilityPS5: 0
+  ps4AllowPS5Detection: 0
   ps4GPU800MHz: 1
   ps4attribEyeToEyeDistanceSettingVR: 0
   ps4IncludedModules: []
@@ -781,10 +782,22 @@ PlayerSettings:
   webGLThreadsSupport: 0
   webGLDecompressionFallback: 0
   scriptingDefineSymbols:
-    Android: CROSS_PLATFORM_INPUT;MOBILE_INPUT
-    Standalone: CROSS_PLATFORM_INPUT
-    Windows Store Apps: MOBILE_INPUT
-    iPhone: CROSS_PLATFORM_INPUT;MOBILE_INPUT
+    Android: CROSS_PLATFORM_INPUT;MOBILE_INPUT;ASTAR_FAST_NO_EXCEPTIONS
+    CloudRendering: ASTAR_FAST_NO_EXCEPTIONS
+    EmbeddedLinux: ASTAR_FAST_NO_EXCEPTIONS
+    GameCoreScarlett: ASTAR_FAST_NO_EXCEPTIONS
+    GameCoreXboxOne: ASTAR_FAST_NO_EXCEPTIONS
+    Lumin: ASTAR_FAST_NO_EXCEPTIONS
+    Nintendo Switch: ASTAR_FAST_NO_EXCEPTIONS
+    PS4: ASTAR_FAST_NO_EXCEPTIONS
+    PS5: ASTAR_FAST_NO_EXCEPTIONS
+    Stadia: ASTAR_FAST_NO_EXCEPTIONS
+    Standalone: CROSS_PLATFORM_INPUT;ASTAR_FAST_NO_EXCEPTIONS
+    WebGL: ASTAR_FAST_NO_EXCEPTIONS
+    Windows Store Apps: MOBILE_INPUT;ASTAR_FAST_NO_EXCEPTIONS
+    XboxOne: ASTAR_FAST_NO_EXCEPTIONS
+    iPhone: CROSS_PLATFORM_INPUT;MOBILE_INPUT;ASTAR_FAST_NO_EXCEPTIONS
+    tvOS: ASTAR_FAST_NO_EXCEPTIONS
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend:
