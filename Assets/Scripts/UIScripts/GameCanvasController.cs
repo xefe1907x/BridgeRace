@@ -1,4 +1,3 @@
-using System;
 using TMPro;
 using UnityEngine;
 
@@ -13,13 +12,30 @@ public class GameCanvasController : MonoBehaviour
 
     public TextMeshProUGUI winLevelText;
     public TextMeshProUGUI loseLevelText;
-    
+    public TextMeshProUGUI winUIEarned;
+    public TextMeshProUGUI winUIWallet;
+
+    int earnedGold = 0;
 
     void Start()
     {
         PlayerControl.Instance.winGame += OpenWinUIAndWinGame;
         BotController.loseGame += OpenLoseUIAndLoseGame;
+        PlayerControl.Instance.collectBricks += IncreaseEarnedGold;
+        ButtonSessions.pushedNextLevelButton += SavePlayerMoney;
         LevelSetter();
+    }
+
+    void WinUITextSetter()
+    {
+        var currentMoney = PlayerPrefs.GetInt("playerMoney");
+        winUIEarned.text = earnedGold + " $ KAZANDINIZ";
+        winUIWallet.text = currentMoney.ToString();
+    }
+
+    void IncreaseEarnedGold()
+    {
+        earnedGold += 1;
     }
 
     void LevelSetter()
@@ -29,8 +45,8 @@ public class GameCanvasController : MonoBehaviour
         if (currentLevel == 0)
             currentLevel = 1;
 
-        winLevelText.text = "Episode " + currentLevel;
-        loseLevelText.text = "Episode " + currentLevel;
+        winLevelText.text = "Bölüm " + currentLevel;
+        loseLevelText.text = "Bölüm " + currentLevel;
     }
 
     void OpenWinUIAndWinGame()
@@ -40,6 +56,16 @@ public class GameCanvasController : MonoBehaviour
         character2.SetActive(false);
         character3.SetActive(false);
         character4.SetActive(false);
+        WinUITextSetter();
+    }
+
+    void SavePlayerMoney()
+    {
+        var currentMoney = PlayerPrefs.GetInt("playerMoney");
+
+        var endMoney = currentMoney + earnedGold;
+        
+        PlayerPrefs.SetInt("playerMoney", endMoney);
     }
     
     void OpenLoseUIAndLoseGame()
@@ -53,7 +79,9 @@ public class GameCanvasController : MonoBehaviour
 
     void OnDisable()
     {
+        PlayerControl.Instance.collectBricks -= IncreaseEarnedGold;
         BotController.loseGame -= OpenLoseUIAndLoseGame;
         PlayerControl.Instance.winGame -= OpenWinUIAndWinGame;
+        ButtonSessions.pushedNextLevelButton -= SavePlayerMoney;
     }
 }

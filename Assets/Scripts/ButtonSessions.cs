@@ -6,6 +6,8 @@ public class ButtonSessions : MonoBehaviour
 {
     int currentLevel;
 
+    public static Action pushedNextLevelButton;
+
     AudioSource audioSource;
     public AudioClip buttonClickSound;
     void Start()
@@ -34,7 +36,7 @@ public class ButtonSessions : MonoBehaviour
     public void LoadNextLevel()
     {
         int nextLevel;
-        
+        pushedNextLevelButton?.Invoke();
         currentLevel = SceneManager.GetActiveScene().buildIndex;
         nextLevel = currentLevel + 1;
         PlayerPrefs.SetInt("currentLevel", nextLevel);
